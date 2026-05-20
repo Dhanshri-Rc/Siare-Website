@@ -111,17 +111,17 @@ export default function Footer() {
 
             <li className="flex gap-2 items-center text-[13px] font-medium">
               <Mail size={15} className="text-[#8fb1de] shrink-0" />
-              <span>info@siare.org</span>
+              <span>contact@siaresociety.org</span>
             </li>
 
             <li className="flex gap-2 items-center text-[13px] font-medium">
               <Globe size={15} className="text-[#8fb1de] shrink-0" />
-              <span>www.siare.org</span>
+              <span>siaresociety.org</span>
             </li>
 
             <li className="flex gap-2 items-center text-[13px] font-medium">
               <Phone size={15} className="text-[#8fb1de] shrink-0" />
-              <span>+91 123 456 7890</span>
+              <span>+91 738 735 5544</span>
             </li>
           </ul>
         </div>

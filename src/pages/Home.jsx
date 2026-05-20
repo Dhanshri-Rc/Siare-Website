@@ -1,15 +1,16 @@
-import { Send, Search } from "lucide-react";
+import { Send, Search, UsersRound, GraduationCap, CalendarDays, BookOpen } from "lucide-react";
 import { Link } from "react-router-dom";
 import homeBg from "../assets/home.png";
 
 import image from "../assets/image.png";
 
-import { Shield, Globe2, Users, Leaf } from "lucide-react";
+
 import quoteBg from "../assets/temp.jpeg";
 import icon2 from "../assets/icon2.png";
 import icon3 from "../assets/icon3.png";
 import icon4 from "../assets/icon4.png";
 import icon5 from "../assets/icon5.png";
+import siare from "../assets/siare.png"
 
 
 
@@ -293,20 +294,7 @@ export default function Home() {
           </div>
         ))}
       </div>
-      {/* Small Blue Curved Section */}
-{/* <div className="absolute left-0 right-0  mt-4 z-20 h-[55px] overflow-hidden">
-  <div
-    className="
-      absolute
-      left-[-5%]
-      right-[-5%]
-      bottom-[-45px]
-      h-[85px]
-      bg-[#002b63]
-      rounded-t-[100%]
-    "
-  />
-</div> */}
+
     </div>
   </div>
 
@@ -319,69 +307,38 @@ export default function Home() {
 <section className="w-full bg-[#f3f4f6] py-8 sm:py-10 lg:py-12 overflow-hidden">
   <div className="w-full max-w-[1320px] mx-auto px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20">
 
-    <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+    <div
+      className="
+        grid
+        grid-cols-1
+        lg:grid-cols-2
 
-      {/* Left Image */}
-      <div className="relative">
+        gap-8 lg:gap-10
 
-        <div className="rounded-[22px] overflow-hidden">
-          <img
-            src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=900"
-            alt="About SIARE"
-            className="
-              w-full
-              h-[250px]
-              sm:h-[300px]
-              md:h-[340px]
-              lg:h-[380px]
-              object-cover
-            "
-          />
-        </div>
+        items-center
+      "
+    >
 
-        {/* Mission Card */}
-        {/* <div
-          className="
-            absolute
-            left-4
-            bottom-[-22px]
+      {/* Right Content - First On Mobile */}
+      <div
+        className="
+          order-1 lg:order-2
 
-            bg-[linear-gradient(180deg,#1251a0_0%,#0f468d_45%,#0c3067_100%)]
+          pt-1 lg:pt-0
+        "
+      >
 
-            text-white
-
-            rounded-[18px]
-
-            px-5 py-5
-
-            w-[220px]
-            sm:w-[250px]
-
-            border border-[#0c3067]
-
-            shadow-[0_14px_32px_rgba(12,48,103,0.38)]
-          "
-        >
-          <h3 className="text-[1rem] sm:text-[1.08rem] font-bold mb-2">
-            Our Mission
-          </h3>
-
-          <p className="text-[0.82rem] sm:text-[0.88rem] leading-[1.55] font-medium text-white/95">
-            To advance global research by empowering scholars and
-            institutions through trusted, innovative publishing solutions.
-          </p>
-        </div> */}
-      </div>
-
-      {/* Right Content */}
-      <div className="pt-3 lg:pt-0">
-
+        {/* Small Title */}
         <span
           className="
-            text-[#0d57b7]
+            text-[#d4aa35]
+
             uppercase
+
             tracking-[0.15em]
+
             font-bold
+
             text-[0.78rem]
             sm:text-[0.82rem]
           "
@@ -389,210 +346,579 @@ export default function Home() {
           About SIARE
         </span>
 
+        {/* Heading */}
         <h2
           className="
             mt-3
-            font-[600]
+
+            font-bold
+
             leading-[1.14]
+
             tracking-[-0.03em]
 
-            text-[1.5rem]
-            sm:text-[1.5rem]
+            text-[1.55rem]
+            sm:text-[1.8rem]
             md:text-[2rem]
-            lg:text-[2rem]
+            lg:text-[2.1rem]
 
             text-[#071d4f]
           "
         >
-          Advancing Knowledge.
+          Advancing Scholarly
           <br />
 
-          <span className="text-[#0d57b7]">
-            Empowering Researchers.
+          <span className="text-[#071d4f]">
+            Global Collaboration.
           </span>
         </h2>
 
-        <div className="flex mt-3">
-          <span className="h-[3px] w-[22px] bg-[#e52320]" />
-          <span className="h-[3px] w-[22px] bg-[#22a83a]" />
-          <span className="h-[3px] w-[22px] bg-[#f8b51b]" />
-          <span className="h-[3px] w-[22px] bg-[#f05a24]" />
+        {/* Line */}
+        <div className="flex mt-4">
+          <span className="h-[3px] w-[86px] bg-[#d4aa35] rounded-full" />
         </div>
+
+        {/* Description */}
+        <p
+          className="
+            mt-4
+
+            font-serif
+
+            text-[#0b2953]
+
+            text-[14px]
+            sm:text-[15px]
+
+            leading-[1.75]
+
+            font-[400]
+
+            text-justify
+          "
+        >
+          The Society of Integrated Academic Research and Education
+          (SIARE) is an international scholarly organization dedicated
+          to advancing cross-disciplinary research, promoting academic
+          excellence, and supporting global collaboration.
+        </p>
 
         <p
           className="
-            mt-3
-            text-[#334968]
+            mt-4
+
+            font-serif
+
+            text-[#0b2953]
+
             text-[14px]
-            leading-[1.3]
-            max-w-[550px]
+            sm:text-[15px]
+
+            leading-[1.75]
+
+            font-[400]
+
+            text-justify
           "
         >
-          The Society of Integrated Academic Research and Education (SIARE)
-              is an international scholarly organization dedicated to advancing
-              cross-disciplinary research, promoting academic excellence, and
-              supporting global collaboration.
+          SIARE connects leading scholars, emerging researchers,
+          universities, and research organizations through conferences,
+          proceedings publications, and collaborative projects that
+          accelerate knowledge creation.
         </p>
 
-        {/* Features */}
-        <div className="mt-4 space-y-2">
-
-          {[
-            "Rigorous peer-review and editorial standards",
-            "Global visibility and indexing",
-            "Support for interdisciplinary research",
-            "Ethical and transparent publishing",
-          ].map((item, i) => (
-            <div key={i} className="flex items-start gap-3">
-
-              <span className="text-[#0d57b7] text-[1rem] font-bold">
-                ✓
-              </span>
-
-              <p
-                className="
-                  text-[#243b5f]
-                  text-[0.92rem]
-                  sm:text-[0.98rem]
-                  font-semibold
-                  leading-[1.5]
-                "
-              >
-                {item}
-              </p>
-            </div>
-          ))}
-        </div>
-
         {/* Button */}
-        <Link
-          to="/about"
-        >
-        <button
+        <Link to="/about">
+          <button
+            className="
+              mt-6
+
+              h-[44px]
+              sm:h-[46px]
+
+              px-6 sm:px-7
+
+              rounded-[24px]
+
+              bg-[linear-gradient(180deg,#1251a0_0%,#0f468d_45%,#0c3067_100%)]
+
+              border border-[#0c3067]
+
+              text-white
+
+              text-[0.78rem]
+              sm:text-[0.88rem]
+
+              uppercase
+              font-semibold
+
+              flex items-center justify-center gap-2
+
+              shadow-[0_10px_22px_rgba(12,48,103,0.38)]
+
+              transition-all duration-300
+
+              hover:-translate-y-1
+              hover:shadow-[0_14px_28px_rgba(12,48,103,0.45)]
+            "
+          >
+            Learn More About Us →
+          </button>
+        </Link>
+      </div>
+
+      {/* Left Image - Second On Mobile */}
+      <div
+        className="
+          relative
+
+          order-2 lg:order-1
+
+          flex justify-center lg:justify-start
+        "
+      >
+        <div
           className="
-            mt-5
+            rounded-[22px]
 
-            h-[46px]
+            overflow-hidden
 
-            px-7
+            shadow-[0_18px_35px_rgba(0,0,0,0.08)]
 
-            rounded-[24px]
-
-            bg-[linear-gradient(180deg,#1251a0_0%,#0f468d_45%,#0c3067_100%)]
-
-            border border-[#0c3067]
-
-            text-white
-
-            text-[0.82rem]
-            sm:text-[0.88rem]
-
-            uppercase
-            font-semibold
-
-            flex items-center justify-center gap-2
-
-            shadow-[0_10px_22px_rgba(12,48,103,0.38)]
-
-            transition-all duration-300
-            hover:-translate-y-1
+            w-full
+            max-w-[520px]
+            md:max-w-[640px]
           "
         >
-          Learn More About Us →
-        </button>
-</Link>
+          <img
+            src={siare}
+            alt="About SIARE"
+            className="
+              w-full
+
+              h-[240px]
+              sm:h-[300px]
+              md:h-[360px]
+              lg:h-[420px]
+               
+              object-cover
+
+              transition-all duration-500
+
+              hover:scale-[1.03]
+            "
+          />
+        </div>
       </div>
+
     </div>
   </div>
 </section>
 
 
-
 {/* ================= WHY CHOOSE SECTION ================= */}
-<section className="w-full bg-[#f3f4f6] py-8 sm:py-10 lg:py-12  overflow-hidden">
+<section className="w-full bg-[#f5f5f5] py-8 sm:py-10 lg:py-12 overflow-hidden">
 
   <div className="w-full max-w-[1320px] mx-auto px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20">
 
     {/* Heading */}
-    <div className="text-center mb-10">
+    <div className="text-center mb-8 sm:mb-10">
 
-      <p className="text-[#0057a8] text-[0.9rem] font-bold tracking-[0.23em] uppercase mb-2">
-        Why Choose SIARE?
-      </p>
+      <h2
+        className="
+          text-[#0057a8]
 
-      <div className="flex mt-3 mb-4 items-center justify-center">
-        <span className="h-[3px] w-[22px] bg-[#e52320]" />
-        <span className="h-[3px] w-[22px] bg-[#22a83a]" />
-        <span className="h-[3px] w-[22px] bg-[#f8b51b]" />
-        <span className="h-[3px] w-[22px] bg-[#f05a24]" />
+          text-[1.45rem]
+          sm:text-[1.7rem]
+          lg:text-[2rem]
+
+          font-bold
+
+          uppercase
+
+          tracking-[0.02em]
+        "
+      >
+        What SIARE Does
+      </h2>
+
+      <div className="flex items-center justify-center mt-3 mb-4">
+        <span className="h-[3px] w-[90px] bg-[#d4aa35] rounded-full" />
       </div>
 
-      <h2 className="text-[#071d4f] text-[1.6rem] sm:text-[2rem] lg:text-[2rem] font-semibold leading-[1.2]">
-        Built for Researchers, Driven by Impact
-      </h2>
+      <p
+        className="
+          text-[#7a7b7d]
+
+          text-[0.82rem]
+          sm:text-[0.92rem]
+          lg:text-[1rem]
+
+          leading-[1.6]
+
+          max-w-[820px]
+
+          mx-auto
+        "
+      >
+        SIARE functions as a global academic ecosystem providing
+        specialized services for research growth.
+      </p>
     </div>
 
     {/* Cards */}
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6 lg:gap-7">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-7">
 
       {/* Card 1 */}
-      <div className="bg-white border border-[#c8d4e6] rounded-[18px] h-[220px] flex flex-col items-center justify-center text-center px-8">
-        <div className="w-[55px] h-[55px] rounded-[12px] bg-[#1558b7] flex items-center justify-center mb-6">
-          <Shield className="w-7 h-7 text-white" />
+      <div
+        className="
+          group
+
+          bg-[#f8f8f8]
+
+          rounded-[28px]
+
+          px-6 sm:px-8
+          py-7 sm:py-8
+
+          flex flex-col
+          sm:flex-row
+
+          items-start
+
+          gap-5
+
+          shadow-[0_14px_35px_rgba(0,0,0,0.06)]
+
+          transition-all duration-500
+
+          hover:-translate-y-1
+          hover:shadow-[0_20px_45px_rgba(0,0,0,0.10)]
+        "
+      >
+
+        {/* Icon */}
+        <div
+          className="
+            w-[60px]
+            h-[60px]
+hover:bg-[#eab542]
+            rounded-[20px]
+
+            bg-[#0057a8]
+
+            flex items-center justify-center
+
+            shrink-0
+
+            transition-all duration-500
+
+            group-hover:scale-110
+            group-hover:rotate-3
+          "
+        >
+          <BookOpen className="w-9 h-9 text-white" />
         </div>
 
-        <h3 className="text-[#071d4f] text-[1rem] font-bold mb-4">
-          Trusted 
-        </h3>
+        {/* Content */}
+        <div>
 
-        <p className="text-[#334968] text-[0.95rem] leading-[1.55]">
-          Maintaining the highest standards of academic.
-        </p>
+          <h3
+            className="
+              
+
+              text-[1rem]
+              sm:text-[1.25rem]
+
+              font-bold
+              text-[#0057a8]
+
+              leading-[1.2]
+
+              mb-3
+            "
+            style={{ fontFamily: "Georgia, serif" }}
+          >
+            Conference Proceedings Publication
+          </h3>
+
+          <p
+            className="
+              text-[#6d6e71]
+
+              text-[1rem]
+              sm:text-[1.1rem]
+
+              leading-[1.55]
+            "
+          >
+            We publish peer-reviewed proceedings across disciplines such
+            as Engineering, Social Sciences, Management, Agriculture,
+            Biological Sciences, Pharmacy, Humanities, and more.
+          </p>
+        </div>
       </div>
 
       {/* Card 2 */}
-      <div className="bg-white border border-[#c8d4e6] rounded-[18px] h-[220px] flex flex-col items-center justify-center text-center px-8">
-        <div className="w-[55px] h-[55px] rounded-[12px] bg-[#3f83ff] flex items-center justify-center mb-6">
-          <Globe2 className="w-7 h-7 text-white" />
+      <div
+        className="
+          group
+
+          bg-[#f8f8f8]
+
+          rounded-[28px]
+
+          px-6 sm:px-8
+          py-7 sm:py-8
+
+          flex flex-col
+          sm:flex-row
+
+          items-start
+
+          gap-5
+
+          shadow-[0_14px_35px_rgba(0,0,0,0.06)]
+
+          transition-all duration-500
+
+          hover:-translate-y-1
+          hover:shadow-[0_20px_45px_rgba(0,0,0,0.10)]
+        "
+      >
+
+        <div
+          className="
+            w-[60px]
+            h-[60px]
+
+            rounded-[20px]
+hover:bg-[#eab542]
+            bg-[#0057a8]
+
+            flex items-center justify-center
+
+            shrink-0
+
+            transition-all duration-500
+
+            group-hover:scale-110
+            group-hover:rotate-3
+          "
+        >
+          <CalendarDays className="w-9 h-9 text-white" />
         </div>
 
-        <h3 className="text-[#071d4f] text-[1rem] font-bold mb-4">
-          Global Reach
-        </h3>
+        <div>
 
-        <p className="text-[#334968] text-[0.95rem] leading-[1.55]">
-          Connecting research communities across world.
-        </p>
+          <h3
+            className="
+              text-[#0057a8]
+
+              text-[1rem]
+              sm:text-[1.25rem]
+
+              font-bold
+             
+
+              leading-[1.2]
+
+              mb-3
+            "
+            style={{ fontFamily: "Georgia, serif" }}
+          >
+            Academic Events & Conferences
+          </h3>
+
+          <p
+            className="
+              text-[#6d6e71]
+
+              text-[1rem]
+              sm:text-[1.1rem]
+
+              leading-[1.55]
+            "
+          >
+            SIARE partners with universities and organizations worldwide
+            to host conferences, research summits, and thematic
+            symposiums.
+          </p>
+        </div>
       </div>
 
       {/* Card 3 */}
-      <div className="bg-white border border-[#c8d4e6] rounded-[18px] h-[220px] flex flex-col items-center justify-center text-center px-8">
-        <div className="w-[55px] h-[55px] rounded-[12px] bg-[#253c98] flex items-center justify-center mb-6">
-          <Users className="w-7 h-7 text-white" />
+      <div
+        className="
+          group
+
+          bg-[#f8f8f8]
+
+          rounded-[28px]
+
+          px-6 sm:px-8
+          py-7 sm:py-8
+
+          flex flex-col
+          sm:flex-row
+
+          items-start
+
+          gap-5
+
+          shadow-[0_14px_35px_rgba(0,0,0,0.06)]
+
+          transition-all duration-500
+
+          hover:-translate-y-1
+          hover:shadow-[0_20px_45px_rgba(0,0,0,0.10)]
+        "
+      >
+
+        <div
+          className="
+            w-[60px]
+            h-[60px]
+
+            rounded-[20px]
+
+            bg-[#0057a8]
+
+            flex items-center justify-center
+
+            shrink-0
+
+            transition-all duration-500
+             hover:bg-[#eab542]
+            group-hover:scale-110
+            group-hover:rotate-3
+          "
+        >
+          <GraduationCap className="w-9 h-9 text-white" />
         </div>
 
-        <h3 className="text-[#071d4f] text-[1rem] font-bold mb-4">
-          Research Impact
-        </h3>
+        <div>
 
-        <p className="text-[#334968] text-[0.95rem] leading-[1.55]">
-          Maximizing visibility and citations for your research.
-        </p>
+          <h3
+            className="
+              text-[#0057a8]
+
+              text-[1rem]
+              sm:text-[1.25rem]
+
+              font-bold
+              
+
+              leading-[1.2]
+
+              mb-3
+            "
+            style={{ fontFamily: "Georgia, serif" }}
+          >
+            Training & Capacity Building
+          </h3>
+
+          <p
+            className="
+              text-[#6d6e71]
+
+              text-[1rem]
+              sm:text-[1.1rem]
+
+              leading-[1.75]
+            "
+          >
+            Workshops and training modules on research writing,
+            publishing ethics, research analytics, and digital tools.
+          </p>
+        </div>
       </div>
 
       {/* Card 4 */}
-      <div className="bg-white border border-[#c8d4e6] rounded-[18px] h-[220px] flex flex-col items-center justify-center text-center px-8">
-        <div className="w-[55px] h-[55px] rounded-[12px] bg-[#43b34f] flex items-center justify-center mb-6">
-          <Leaf className="w-7 h-7 text-white" />
+      <div
+        className="
+          group
+
+          bg-[#f8f8f8]
+
+          rounded-[28px]
+
+          px-6 sm:px-8
+          py-7 sm:py-8
+
+          flex flex-col
+          sm:flex-row
+
+          items-start
+
+          gap-5
+
+          shadow-[0_14px_35px_rgba(0,0,0,0.06)]
+
+          transition-all duration-500
+
+          hover:-translate-y-1
+          hover:shadow-[0_20px_45px_rgba(0,0,0,0.10)]
+        "
+      >
+
+        <div
+          className="
+            w-[60px]
+            h-[60px]
+hover:bg-[#eab542]
+            rounded-[20px]
+
+            bg-[#0057a8]
+
+            flex items-center justify-center
+
+            shrink-0
+
+            transition-all duration-500
+
+            group-hover:scale-110
+            group-hover:rotate-3
+          "
+        >
+          <UsersRound className="w-9 h-9 text-white" />
         </div>
 
-        <h3 className="text-[#071d4f] text-[1rem] font-bold mb-4">
-          Sustainable 
-        </h3>
+        <div>
 
-        <p className="text-[#334968] text-[0.95rem] leading-[1.55]">
-          Committed to responsible and sustainable growth.
-        </p>
+          <h3
+            className="
+              text-[#0057a8]
+
+              text-[1rem]
+              sm:text-[1.25rem]
+
+              font-bold
+          
+
+              leading-[1.2]
+
+              mb-3
+            "
+            style={{ fontFamily: "Georgia, serif" }}
+          >
+            Research Collaboration Facilitation
+          </h3>
+
+          <p
+            className="
+              text-[#6d6e71]
+
+              text-[1rem]
+              sm:text-[1.1rem]
+
+              leading-[1.75]
+            "
+          >
+            Connecting researchers with institutions and global partners
+            for collaborative projects.
+          </p>
+        </div>
       </div>
 
     </div>

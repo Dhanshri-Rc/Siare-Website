@@ -9,6 +9,14 @@ import ppl from "../assets/people.png";
 import bar from "../assets/bar.png";
 import quoteImg from "../assets/q.png";
 import quoteBg from "../assets/temp.jpg";
+import {
+  Globe2,
+  FileText,
+  Building2,
+  CalendarDays,
+  Lightbulb,
+  Zap,
+} from "lucide-react";
 
 const whatWeDo = [
   {
@@ -38,6 +46,33 @@ const impactStats = [
   { icon: icon2, num: "500+", label: "Proceedings\nPublished" },
   { icon: icon3, num: "80+", label: "Countries\nReached" },
   { icon: icon4, num: "300+", label: "Partner\nInstitutions" },
+];
+
+const coreObjectives = [
+  {
+    icon: Globe2,
+    text: "Promote international\nacademic research and\nscholarly communication",
+  },
+  {
+    icon: FileText,
+    text: "Support high-quality, peer-\nreviewed conference\nproceedings",
+  },
+  {
+    icon: Building2,
+    text: "Build bridges between\nuniversities, researchers,\nand research societies",
+  },
+  {
+    icon: CalendarDays,
+    text: "Organize conferences,\nsymposiums, and academic\ntraining programs",
+  },
+  {
+    icon: Lightbulb,
+    text: "Encourage multidisciplinary\nand cross-domain\nknowledge creation",
+  },
+  {
+    icon: Zap,
+    text: "Enhance research visibility\nthrough indexing, DOI\nassignment, and open\nscholarly access",
+  },
 ];
 
 export default function About() {
@@ -112,9 +147,11 @@ export default function About() {
               </h2>
               <div className="w-[58px] h-[4px] bg-[#43aa37] mt-[12px] mb-[31px] rounded-full"></div>
               <p className="text-[14px] leading-[1.55] font-medium text-[#001b57]">
-                To empower researchers and academicians worldwide by providing a
-                trusted platform for publishing impactful research proceedings
-                and fostering global collaborations.
+                To empower global academic communities by enabling high-quality
+                research dissemination, fostering multidisciplinary
+                collaboration, and building an ecosystem where researchers can
+                exchange ideas, publish outcomes, and contribute to global
+                scientific advancement.
               </p>
             </div>
 
@@ -124,9 +161,10 @@ export default function About() {
               </h2>
               <div className="w-[58px] h-[4px] bg-[#f6a313] mt-[12px] mb-[31px] rounded-full"></div>
               <p className="text-[14px] leading-[1.55] font-medium text-[#001b57]">
-                To be a leading global platform recognized for excellence,
-                integrity, and innovation in scholarly publishing and academic
-                events.
+                To become a globally trusted academic society known for shaping
+                impactful research, integrating innovation with education, and
+                providing a unified platform for scholarly exchange across all
+                major disciplines.
               </p>
             </div>
           </div>
@@ -187,6 +225,51 @@ export default function About() {
             </div>
           </div>
         </div>
+
+        {/* Core Objectives */}
+        <section className="bg-[#f4f8fc] py-[46px] px-4">
+          <div className="w-full max-w-[1520px] mx-auto px-6 sm:px-8 md:px-12 lg:px-2 xl:px-15 ">
+            <div className="text-center mb-[62px]">
+              <h2 className=" text-[20px] uppercase font-bold text-[#001b57] ">
+                Our Core Objectives
+              </h2>
+              <div className="w-[80px] h-[4px] bg-[#c8932a] mx-auto mt-[10px] "></div>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[24px]">
+              {coreObjectives.map((item, i) => {
+                const Icon = item.icon;
+
+                return (
+                  <div
+                    key={i}
+                    className="bg-white rounded-[14px] border border-[#e5ebf1]
+            shadow-[0_3px_10px_rgba(0,0,0,0.06)]
+            px-[24px] py-[26px]
+            min-h-[104px]
+            flex items-center gap-[18px]
+            transition-all duration-300
+            hover:-translate-y-1 hover:shadow-[0_10px_24px_rgba(0,0,0,0.10)]"
+                  >
+                    <div className="w-[48px] h-[48px] rounded-[12px] bg-[#fbf3df] flex items-center justify-center shrink-0">
+                      <Icon
+                        size={24}
+                        strokeWidth={2}
+                        className="text-[#d5a21f]"
+                      />
+                    </div>
+
+                    <p className="whitespace-pre-line text-[14px] md:text-[16px] leading-[1.18] font-semibold text-[#344154]">
+                      {item.text}
+                    </p>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+        {/* Core Objectives */}
+
 
         {/* Quote Banner */}
         <div

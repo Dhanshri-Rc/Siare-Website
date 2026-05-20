@@ -1,8 +1,7 @@
-import { ArrowRight, Handshake,} from "lucide-react";
+import { ArrowRight, Handshake } from "lucide-react";
 import clientsImg from "../assets/client1.png";
 // import icon3 from "../assets/icon3.png";
 import quoteBg from "../assets/temp.jpeg";
-
 
 const internationalCollabs = [
   {
@@ -135,10 +134,9 @@ function UnivCard({ name, region, country, logo }) {
 export default function Clients() {
   return (
     <div className="animate-fade-in">
-
       {/* Hero */}
-    <section
-  className="
+      <section
+        className="
     relative
     bg-navy
     overflow-hidden
@@ -151,16 +149,16 @@ export default function Clients() {
 
     flex items-end
   "
-  style={{
-    backgroundImage: `url(${clientsImg})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-  }}
->
-  <div className="absolute inset-0 bg-[#00153d]/20" />
+        style={{
+          backgroundImage: `url(${clientsImg})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className="absolute inset-0 bg-[#00153d]/20" />
 
-  <div
-    className="
+        <div
+          className="
       relative z-10
     w-full max-w-[1320px] mx-auto px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20
 
@@ -172,10 +170,10 @@ export default function Clients() {
       md:pb-[6rem]
      
     "
-  >
-    {/* Title */}
-    <h1
-      className="
+        >
+          {/* Title */}
+          <h1
+            className="
         text-[28px]
         sm:text-[34px]
         md:text-[38px]
@@ -189,18 +187,18 @@ export default function Clients() {
 
         animate-[fadeSlideUp_0.8s_ease-out]
       "
-    >
-      OUR <span className="text-[#f6aa13]">MEMBERS</span>
-    </h1>
-<div className="flex mt-3 mb-5 overflow-hidden rounded-full w-fit">
-              <span className="h-[3px] w-[24px] sm:w-[32px] bg-[#43aa37]"></span>
-              <span className="h-[3px] w-[24px] sm:w-[32px] bg-[#f6a313]"></span>
-              <span className="h-[3px] w-[24px] sm:w-[32px] bg-[#ff352e]"></span>
-              <span className="h-[3px] w-[24px] sm:w-[32px] bg-[#0875c9]"></span>
-            </div>
-    {/* Description */}
-    <p
-      className="
+          >
+            OUR <span className="text-[#f6aa13]">MEMBERS</span>
+          </h1>
+          <div className="flex mt-3 mb-5 overflow-hidden rounded-full w-fit">
+            <span className="h-[3px] w-[24px] sm:w-[32px] bg-[#43aa37]"></span>
+            <span className="h-[3px] w-[24px] sm:w-[32px] bg-[#f6a313]"></span>
+            <span className="h-[3px] w-[24px] sm:w-[32px] bg-[#ff352e]"></span>
+            <span className="h-[3px] w-[24px] sm:w-[32px] bg-[#0875c9]"></span>
+          </div>
+          {/* Description */}
+          <p
+            className="
         text-white
         text-[13px]
         sm:text-[14px]
@@ -215,14 +213,15 @@ export default function Clients() {
 
         animate-[fadeSlideUp_1s_ease-out]
       "
-    >
-      Building global partnerships for research, <br className="hidden sm:block" />
-      innovation, and academic excellence.
-    </p>
+          >
+            Building global partnerships for research,{" "}
+            <br className="hidden sm:block" />
+            innovation, and academic excellence.
+          </p>
 
-    {/* Stats Boxes */}
-    <div
-      className="
+          {/* Stats Boxes */}
+          <div
+            className="
         flex
         flex-col
         min-[300px]:flex-row
@@ -234,10 +233,10 @@ export default function Clients() {
 
         animate-[fadeSlideUp_1.2s_ease-out]
       "
-    >
-      {/* International Box */}
-      <div
-        className="
+          >
+            {/* International Box */}
+            <div
+              className="
           group
 
           w-full
@@ -270,9 +269,9 @@ export default function Clients() {
           hover:border-[#38d430]/80
           hover:shadow-[0_14px_28px_rgba(56,212,48,0.22)]
         "
-      >
-        <div
-          className="
+            >
+              <div
+                className="
             w-[38px]
             h-[38px]
             sm:w-[42px]
@@ -283,40 +282,40 @@ export default function Clients() {
             transition-all duration-300
             group-hover:scale-110
           "
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="#38d430"
-            strokeWidth="2.2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            className="w-full h-full"
-          >
-            <circle cx="12" cy="12" r="9" />
-            <path d="M3 12h18" />
-            <path d="M12 3a15 15 0 0 1 0 18" />
-            <path d="M12 3a15 15 0 0 0 0 18" />
-          </svg>
-        </div>
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#38d430"
+                  strokeWidth="2.2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="w-full h-full"
+                >
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M3 12h18" />
+                  <path d="M12 3a15 15 0 0 1 0 18" />
+                  <path d="M12 3a15 15 0 0 0 0 18" />
+                </svg>
+              </div>
 
-        <div>
-          <div className="text-[#38d430] font-bold text-[28px] sm:text-[30px] leading-none tracking-[-0.03em]">
-            20+
-          </div>
+              <div>
+                <div className="text-[#38d430] font-bold text-[28px] sm:text-[30px] leading-none tracking-[-0.03em]">
+                  20+
+                </div>
 
-          <div className="text-white/90 text-[10px] sm:text-[11px] font-medium leading-[1.15] uppercase tracking-[0.03em] mt-2">
-            INTERNATIONAL
-            <br />
-            COLLABORATIONS
-          </div>
-        </div>
-      </div>
+                <div className="text-white/90 text-[10px] sm:text-[11px] font-medium leading-[1.15] uppercase tracking-[0.03em] mt-2">
+                  INTERNATIONAL
+                  <br />
+                  COLLABORATIONS
+                </div>
+              </div>
+            </div>
 
-      {/* Indian Box */}
-      <div
-        className="
+            {/* Indian Box */}
+            <div
+              className="
           group
 
           w-full
@@ -349,9 +348,9 @@ export default function Clients() {
           hover:border-[#f6aa13]/80
           hover:shadow-[0_14px_28px_rgba(246,170,19,0.22)]
         "
-      >
-        <div
-          className="
+            >
+              <div
+                className="
             w-[40px]
             h-[40px]
             sm:w-[44px]
@@ -362,47 +361,46 @@ export default function Clients() {
             transition-all duration-300
             group-hover:scale-110
           "
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="#f6aa13"
-            strokeWidth="2.2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            className="w-full h-full"
-          >
-            <path d="M3 10h18" />
-            <path d="M5 10v8" />
-            <path d="M9 10v8" />
-            <path d="M15 10v8" />
-            <path d="M19 10v8" />
-            <path d="M4 18h16" />
-            <path d="M12 3l9 5H3l9-5z" />
-          </svg>
-        </div>
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#f6aa13"
+                  strokeWidth="2.2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="w-full h-full"
+                >
+                  <path d="M3 10h18" />
+                  <path d="M5 10v8" />
+                  <path d="M9 10v8" />
+                  <path d="M15 10v8" />
+                  <path d="M19 10v8" />
+                  <path d="M4 18h16" />
+                  <path d="M12 3l9 5H3l9-5z" />
+                </svg>
+              </div>
 
-        <div>
-          <div className="text-[#ff9d10] font-bold text-[28px] sm:text-[30px] leading-none tracking-[-0.03em]">
-            100+
-          </div>
+              <div>
+                <div className="text-[#ff9d10] font-bold text-[28px] sm:text-[30px] leading-none tracking-[-0.03em]">
+                  100+
+                </div>
 
-          <div className="text-white/90 text-[10px] sm:text-[11px] font-medium leading-[1.15] uppercase tracking-[0.03em] mt-2">
-            INDIAN
-            <br />
-            COLLABORATIONS
+                <div className="text-white/90 text-[10px] sm:text-[11px] font-medium leading-[1.15] uppercase tracking-[0.03em] mt-2">
+                  INDIAN
+                  <br />
+                  COLLABORATIONS
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
+      </section>
 
       {/* International Collaborations */}
       <section className="py-10 sm:py-12 lg:py-14 bg-[#f7f8fb]">
         <div className="w-full max-w-[1320px] mx-auto px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20">
-
           <div className="text-center mb-10">
             <div className="flex items-center justify-center gap-3 mb-3">
               <div className="h-px flex-1 max-w-16 bg-[#f6aa13]" />
@@ -426,14 +424,14 @@ export default function Clients() {
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 sm:gap-5">
-           {internationalCollabs.map((c, i) => (
-  <UnivCard
-    key={i}
-    name={c.name}
-    country={c.country}
-    logo={c.logo}
-  />
-))}
+            {internationalCollabs.map((c, i) => (
+              <UnivCard
+                key={i}
+                name={c.name}
+                country={c.country}
+                logo={c.logo}
+              />
+            ))}
           </div>
 
           <div className="text-center mt-8">
@@ -448,7 +446,6 @@ export default function Clients() {
       {/* Indian Collaborations */}
       <section className="py-10 sm:py-12 lg:py-14 bg-white">
         <div className="w-full max-w-[1320px] mx-auto px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20">
-
           <div className="text-center mb-10">
             <div className="flex items-center justify-center gap-3 mb-3">
               <div className="h-px flex-1 max-w-16 bg-[#e2ac39]" />
@@ -466,20 +463,15 @@ export default function Clients() {
 
             <p className="text-[#001b57] text-[14px] mx-auto font-medium">
               SIARE collaborates with 100+ leading Indian universities,
-              institutes, and organizations <br /> to strengthen research, education,
-              and innovation across diverse disciplines.
+              institutes, and organizations <br /> to strengthen research,
+              education, and innovation across diverse disciplines.
             </p>
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 sm:gap-5">
-          {indianCollabs.map((c, i) => (
-  <UnivCard
-    key={i}
-    name={c.name}
-    region={c.region}
-    logo={c.logo}
-  />
-))}
+            {indianCollabs.map((c, i) => (
+              <UnivCard key={i} name={c.name} region={c.region} logo={c.logo} />
+            ))}
           </div>
 
           <div className="text-center mt-8">
@@ -492,16 +484,12 @@ export default function Clients() {
       </section>
 
       {/* CTA Banner */}
-    
 
-
-   <section className="w-full py-6 sm:py-8 lg:py-10 overflow-hidden">
-
-  {/* Main Container */}
-  <div className="w-full max-w-[1320px] mx-auto px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20">
-
-    <div
-      className="
+      <section className="w-full py-6 sm:py-8 lg:py-10 overflow-hidden">
+        {/* Main Container */}
+        <div className="w-full max-w-[1320px] mx-auto px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20">
+          <div
+            className="
         relative overflow-hidden
 
         rounded-[20px]
@@ -522,35 +510,33 @@ export default function Clients() {
         transition-all duration-500
         hover:shadow-[0_24px_45px_rgba(0,0,0,0.12)]
       "
-      style={{
-        backgroundImage: `
+            style={{
+              backgroundImage: `
           linear-gradient(rgba(0,28,85,0.92), rgba(0,28,85,0.92)),
           url(${quoteBg})
         `,
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-      }}
-    >
-
-      {/* Left Content */}
-     <div className="flex flex-col sm:flex-row items-center gap-4">
-
-        {/* Handshake Icon */}
-        <div
-          className="
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "cover",
+            }}
+          >
+            {/* Left Content */}
+            <div className="flex flex-col sm:flex-row items-center gap-4">
+              {/* Handshake Icon */}
+              <div
+                className="
             w-[50px] h-[50px]
             rounded-full
             border-2 border-[#e2ac39]
             flex items-center justify-center
             shrink-0
           "
-        >
-          <Handshake className="w-[34px] h-[34px] text-[#e2ac39]" />
-        </div>
+              >
+                <Handshake className="w-[34px] h-[34px] text-[#e2ac39]" />
+              </div>
 
-        <h3
-          className="
+              <h3
+                className="
             text-white
             text-[1rem]
             sm:text-[1rem]
@@ -559,69 +545,71 @@ export default function Clients() {
             leading-[1.45]
             max-w-[540px]
           "
-        >
-          Together, we are shaping the future of research
-          <br className="hidden sm:block" />
-          and education for a better tomorrow.
-        </h3>
-      </div>
+              >
+                Together, we are shaping the future of research
+                <br className="hidden sm:block" />
+                and education for a better tomorrow.
+              </h3>
+            </div>
 
-      {/* Right Button */}
-      <button
-        className="
-          relative z-10
+            {/* Right Button */}
+            <a
+              href="https://membership.siaresociety.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="
+    group
+    relative z-10
 
-          h-[42px]
-          sm:h-[46px]
+    h-[42px]
+    sm:h-[46px]
 
-          px-5 sm:px-7
+    px-5 sm:px-7
 
-          rounded-full
+    rounded-full
 
-          bg-[linear-gradient(180deg,#f3c04d_0%,#e2ac39_52%,#b9851e_100%)]
+    bg-[linear-gradient(180deg,#f3c04d_0%,#e2ac39_52%,#b9851e_100%)]
 
-          border border-[#c8932a]
+    border border-[#c8932a]
 
-          text-[#071d4f]
+    text-[#071d4f]
 
-          text-[11px]
-          sm:text-[13px]
+    text-[11px]
+    sm:text-[13px]
 
-          uppercase
-          font-bold
+    uppercase
+    font-bold
 
-          flex items-center justify-center gap-2
+    flex items-center justify-center gap-2
 
-          shadow-[0_10px_22px_rgba(226,172,57,0.28)]
+    shadow-[0_10px_22px_rgba(226,172,57,0.28)]
 
-          transition-all duration-300
+    transition-all duration-300
 
-          hover:-translate-y-1
-          hover:bg-none
-          hover:bg-[#c8932a]
-          hover:text-white
-          hover:shadow-[0_14px_28px_rgba(226,172,57,0.38)]
+    hover:-translate-y-1
+    hover:bg-none
+    hover:bg-[#c8932a]
+    hover:text-white
+    hover:shadow-[0_14px_28px_rgba(226,172,57,0.38)]
 
-          whitespace-nowrap
+    whitespace-nowrap
 
-          w-full
-          sm:w-auto
+    w-full
+    sm:w-auto
 
-          md:ml-auto
-        "
-      >
-        PARTNER WITH US
-        <ArrowRight size={16} strokeWidth={2.2}
-          className="transition-transform duration-300 group-hover:translate-x-1"
-        />
-
-     
-      </button>
-
-    </div>
-  </div>
-</section>
-
+    md:ml-auto
+  "
+            >
+              BECOME A MEMBER
+              <ArrowRight
+                size={16}
+                strokeWidth={2.2}
+                className="transition-transform duration-300 group-hover:translate-x-1"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

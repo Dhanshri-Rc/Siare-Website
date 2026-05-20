@@ -1,4 +1,4 @@
-import {Send } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import membershipImg from "../assets/membership.jpeg";
 import icon1 from "../assets/icon1.png";
 import icon2 from "../assets/icon2.png";
@@ -82,11 +82,11 @@ const membershipTypes = [
 ];
 
 const benefits = [
-{
-  icon: icon2,
-  text: "Publication support in peer-reviewed & Scopus indexed journals",
-  bg: "bg-[#e9f7e9]",
-},
+  {
+    icon: icon2,
+    text: "Publication support in peer-reviewed & Scopus indexed journals",
+    bg: "bg-[#e9f7e9]",
+  },
   {
     icon: document,
     text: "Turnitin reports with AI check",
@@ -396,13 +396,11 @@ export default function Membership() {
       </section>
 
       {/* Quote Banner */}
-       <section className="w-full py-6 sm:py-8 lg:py-10 overflow-hidden">
-    
-      {/* Main Container */}
-      <div className="w-full max-w-[1320px] mx-auto px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20">
-    
-        <div
-          className="
+      <section className="w-full py-6 sm:py-8 lg:py-10 overflow-hidden">
+        {/* Main Container */}
+        <div className="w-full max-w-[1320px] mx-auto px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20">
+          <div
+            className="
             relative overflow-hidden
     
             rounded-[20px]
@@ -423,22 +421,20 @@ export default function Membership() {
             transition-all duration-500
             hover:shadow-[0_24px_45px_rgba(0,0,0,0.12)]
           "
-          style={{
-            backgroundImage: `
+            style={{
+              backgroundImage: `
               linear-gradient(rgba(0,28,85,0.92), rgba(0,28,85,0.92)),
               url(${quoteBg})
             `,
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
-          }}
-        >
-    
-          {/* Left Content */}
-          <div className="flex-1 relative z-10">
-    
-            <p
-              className="
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "cover",
+            }}
+          >
+            {/* Left Content */}
+            <div className="flex-1 relative z-10">
+              <p
+                className="
                 text-white
     
                 text-[13px]
@@ -451,75 +447,76 @@ export default function Membership() {
     
                 max-w-[760px]
               "
+              >
+                At SIARE, we believe that meaningful research leads to
+                real-world impact.
+                <br />
+                Together, we{" "}
+                <span className="text-[#e2ac39] font-semibold">
+                  advance knowledge, inspire innovation, and build a better
+                  future.
+                </span>
+              </p>
+            </div>
+
+            {/* Right Button */}
+            <a
+              href="https://membership.siaresociety.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="
+    group
+    relative z-10
+
+    h-[42px]
+    sm:h-[46px]
+
+    px-5 sm:px-7
+
+    rounded-full
+
+    bg-[linear-gradient(180deg,#f3c04d_0%,#e2ac39_52%,#b9851e_100%)]
+
+    border border-[#c8932a]
+
+    text-[#071d4f]
+
+    text-[11px]
+    sm:text-[13px]
+
+    uppercase
+    font-bold
+
+    flex items-center justify-center gap-2
+
+    shadow-[0_10px_22px_rgba(226,172,57,0.28)]
+
+    transition-all duration-300
+
+    hover:-translate-y-1
+    hover:bg-none
+    hover:bg-[#c8932a]
+    hover:text-white
+    hover:shadow-[0_14px_28px_rgba(226,172,57,0.38)]
+
+    whitespace-nowrap
+
+    w-full
+    sm:w-auto
+
+    md:ml-auto
+  "
             >
-              At SIARE, we believe that meaningful research leads to
-              real-world impact.
-              <br />
-    
-              Together, we{" "}
-    
-              <span className="text-[#e2ac39] font-semibold">
-                advance knowledge, inspire innovation, and build a
-                better future.
-              </span>
-            </p>
+              BECOME A MEMBER
+              <ArrowRight
+                size={16}
+                strokeWidth={2.2}
+                className="transition-transform duration-300 group-hover:translate-x-1"
+              />
+            </a>
           </div>
-    
-          {/* Right Button */}
-          <button
-            className="
-              relative z-10
-    
-              h-[42px]
-              sm:h-[46px]
-    
-              px-5 sm:px-7
-    
-              rounded-full
-    
-              bg-[linear-gradient(180deg,#f3c04d_0%,#e2ac39_52%,#b9851e_100%)]
-    
-              border border-[#c8932a]
-    
-              text-[#071d4f]
-    
-              text-[11px]
-              sm:text-[13px]
-    
-              uppercase
-              font-bold
-    
-              flex items-center justify-center gap-2
-    
-              shadow-[0_10px_22px_rgba(226,172,57,0.28)]
-    
-              transition-all duration-300
-    
-              hover:-translate-y-1
-              hover:bg-none
-              hover:bg-[#c8932a]
-              hover:text-white
-              hover:shadow-[0_14px_28px_rgba(226,172,57,0.38)]
-    
-              whitespace-nowrap
-    
-              w-full
-              sm:w-auto
-    
-              md:ml-auto
-            "
-          >
-            <Send
-              size={15}
-              className="transition-transform duration-300 group-hover:translate-x-1"
-            />
-    
-            Submit Proposal
-          </button>
-    
         </div>
-      </div>
-    </section>
+      </section>
     </div>
   );
 }
