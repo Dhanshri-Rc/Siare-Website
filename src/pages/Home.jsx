@@ -603,8 +603,11 @@ export default function Home() {
 
 
 {/* Quote Banner */}
-<section className="w-full py-8 sm:py-10 lg:py-12 overflow-hidden">
 
+
+   <section className="w-full py-6 sm:py-8 lg:py-10 overflow-hidden">
+
+  {/* Main Container */}
   <div className="w-full max-w-[1320px] mx-auto px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20">
 
     <div
@@ -613,20 +616,21 @@ export default function Home() {
 
         rounded-[20px]
 
-        px-5 sm:px-8 lg:px-10
-        py-5 sm:py-6
+        px-5 sm:px-7 lg:px-10
+        py-[18px] sm:py-[20px]
 
         flex flex-col
-        lg:flex-row
+        md:flex-row
 
         items-start
-        lg:items-center
+        md:items-center
 
-        justify-between
-
-        gap-5 lg:gap-8
+        gap-5 md:gap-8
 
         shadow-[0_18px_35px_rgba(0,0,0,0.08)]
+
+        transition-all duration-500
+        hover:shadow-[0_24px_45px_rgba(0,0,0,0.12)]
       "
       style={{
         backgroundImage: `
@@ -640,43 +644,32 @@ export default function Home() {
     >
 
       {/* Left Content */}
-      <div className="relative z-10 max-w-[720px]">
-
-        <h3
-          className="
-            text-white
-
-            text-[1rem]
-            sm:text-[1rem]
-            lg:text-[1.35rem]
-
-            font-semibold
-
-            leading-[1.25]
-
-            uppercase
-          "
-        >
-          Publish. Collaborate. Create Impact.
-        </h3>
+      <div className="flex-1 relative z-10">
 
         <p
           className="
-            mt-2
+            text-white
 
-            text-[#e2ac39]
+            text-[13px]
+            sm:text-[14px]
+            md:text-[17px]
 
-            text-[0.82rem]
-            sm:text-[0.92rem]
-            lg:text-[1rem]
-
-            leading-[1.7]
+            leading-[1.75]
 
             font-medium
+
+            max-w-[760px]
           "
         >
-          Join researchers and institutions worldwide in advancing
+         Publish. Collaborate. Create Impact.
+          <br />
+
+     
+
+          <span className="text-[#e2ac39] font-semibold text-[12px] sm:text-[13px] md:text-[14px]">
+            Join researchers and institutions worldwide in advancing
           knowledge.
+          </span>
         </p>
       </div>
 
@@ -696,10 +689,10 @@ export default function Home() {
 
           border border-[#c8932a]
 
-          text-white
+          text-[#071d4f]
 
-          text-[0.74rem]
-          sm:text-[0.84rem]
+          text-[11px]
+          sm:text-[13px]
 
           uppercase
           font-bold
@@ -709,15 +702,25 @@ export default function Home() {
           shadow-[0_10px_22px_rgba(226,172,57,0.28)]
 
           transition-all duration-300
+
           hover:-translate-y-1
+          hover:bg-none
+          hover:bg-[#c8932a]
+          hover:text-white
+          hover:shadow-[0_14px_28px_rgba(226,172,57,0.38)]
 
           whitespace-nowrap
 
           w-full
           sm:w-auto
+
+          md:ml-auto
         "
       >
-        <Send size={16} />
+        <Send
+          size={15}
+          className="transition-transform duration-300 group-hover:translate-x-1"
+        />
 
         Submit Proposal
       </button>
@@ -725,6 +728,8 @@ export default function Home() {
     </div>
   </div>
 </section>
+
+
     </div>
   );
 }

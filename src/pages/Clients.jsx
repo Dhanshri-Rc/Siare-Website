@@ -493,43 +493,48 @@ export default function Clients() {
 
       {/* CTA Banner */}
     
-<section className="w-full py-5 sm:py-6 lg:py-6 overflow-hidden">
 
+
+   <section className="w-full py-6 sm:py-8 lg:py-10 overflow-hidden">
+
+  {/* Main Container */}
   <div className="w-full max-w-[1320px] mx-auto px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20">
 
-      <div
-          className="
-            relative overflow-hidden
-    
-            rounded-[20px]
-    
-            px-5 sm:px-8 lg:px-10
-            py-5 sm:py-6
-    
-            flex flex-col
-            lg:flex-row
-    
-            items-start
-            lg:items-center
-    
-            justify-between
-    
-            gap-5 lg:gap-8
-    
-            shadow-[0_18px_35px_rgba(0,0,0,0.08)]
-          "
-          style={{
-            backgroundImage: `
-              linear-gradient(rgba(0,28,85,0.92), rgba(0,28,85,0.92)),
-              url(${quoteBg})
-            `,
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
-          }}
-        >
+    <div
+      className="
+        relative overflow-hidden
+
+        rounded-[20px]
+
+        px-5 sm:px-7 lg:px-10
+        py-[18px] sm:py-[20px]
+
+        flex flex-col
+        md:flex-row
+
+        items-start
+        md:items-center
+
+        gap-5 md:gap-8
+
+        shadow-[0_18px_35px_rgba(0,0,0,0.08)]
+
+        transition-all duration-500
+        hover:shadow-[0_24px_45px_rgba(0,0,0,0.12)]
+      "
+      style={{
+        backgroundImage: `
+          linear-gradient(rgba(0,28,85,0.92), rgba(0,28,85,0.92)),
+          url(${quoteBg})
+        `,
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+      }}
+    >
+
       {/* Left Content */}
-      <div className="flex flex-col sm:flex-row items-center gap-4">
+     <div className="flex flex-col sm:flex-row items-center gap-4">
 
         {/* Handshake Icon */}
         <div
@@ -561,12 +566,8 @@ export default function Clients() {
         </h3>
       </div>
 
-      {/* Divider */}
-      <div className="hidden md:block h-[52px] w-px bg-white/15" />
-
-      {/* Button */}
-      
-       <button
+      {/* Right Button */}
+      <button
         className="
           relative z-10
 
@@ -581,10 +582,10 @@ export default function Clients() {
 
           border border-[#c8932a]
 
-          text-white
+          text-[#071d4f]
 
-          text-[0.74rem]
-          sm:text-[0.84rem]
+          text-[11px]
+          sm:text-[13px]
 
           uppercase
           font-bold
@@ -594,20 +595,33 @@ export default function Clients() {
           shadow-[0_10px_22px_rgba(226,172,57,0.28)]
 
           transition-all duration-300
+
           hover:-translate-y-1
+          hover:bg-none
+          hover:bg-[#c8932a]
+          hover:text-white
+          hover:shadow-[0_14px_28px_rgba(226,172,57,0.38)]
 
           whitespace-nowrap
 
           w-full
           sm:w-auto
+
+          md:ml-auto
         "
       >
-         PARTNER WITH US
-        <ArrowRight size={16} strokeWidth={2.2} />
+        PARTNER WITH US
+        <ArrowRight size={16} strokeWidth={2.2}
+          className="transition-transform duration-300 group-hover:translate-x-1"
+        />
+
+     
       </button>
+
     </div>
   </div>
 </section>
+
     </div>
   );
 }
