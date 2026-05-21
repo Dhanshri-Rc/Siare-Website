@@ -362,13 +362,13 @@ export default function Home() {
             md:text-[2rem]
             lg:text-[2.1rem]
 
-            text-[#071d4f]
+            text-[#0057a8]
           "
         >
           Advancing Scholarly
           <br />
 
-          <span className="text-[#071d4f]">
+          <span className="text-[#0057a8]">
             Global Collaboration.
           </span>
         </h2>
@@ -499,7 +499,7 @@ export default function Home() {
               h-[240px]
               sm:h-[300px]
               md:h-[360px]
-              lg:h-[420px]
+              lg:h-[400px]
                
               object-cover
 
@@ -600,8 +600,8 @@ export default function Home() {
         {/* Icon */}
         <div
           className="
-            w-[60px]
-            h-[60px]
+            w-[55px]
+            h-[55px]
 hover:bg-[#eab542]
             rounded-[20px]
 
@@ -617,7 +617,7 @@ hover:bg-[#eab542]
             group-hover:rotate-3
           "
         >
-          <BookOpen className="w-9 h-9 text-white" />
+          <BookOpen className="w-7 h-7 text-white" />
         </div>
 
         {/* Content */}
@@ -689,8 +689,8 @@ hover:bg-[#eab542]
 
         <div
           className="
-            w-[60px]
-            h-[60px]
+            w-[55px]
+            h-[55px]
 
             rounded-[20px]
 hover:bg-[#eab542]
@@ -706,7 +706,7 @@ hover:bg-[#eab542]
             group-hover:rotate-3
           "
         >
-          <CalendarDays className="w-9 h-9 text-white" />
+          <CalendarDays className="w-7 h-7 text-white" />
         </div>
 
         <div>
@@ -777,8 +777,8 @@ hover:bg-[#eab542]
 
         <div
           className="
-            w-[60px]
-            h-[60px]
+            w-[55px]
+            h-[55px]
 
             rounded-[20px]
 
@@ -794,7 +794,7 @@ hover:bg-[#eab542]
             group-hover:rotate-3
           "
         >
-          <GraduationCap className="w-9 h-9 text-white" />
+          <GraduationCap className="w-7 h-7 text-white" />
         </div>
 
         <div>
@@ -864,8 +864,8 @@ hover:bg-[#eab542]
 
         <div
           className="
-            w-[60px]
-            h-[60px]
+            w-[55px]
+            h-[55px]
 hover:bg-[#eab542]
             rounded-[20px]
 
@@ -881,7 +881,7 @@ hover:bg-[#eab542]
             group-hover:rotate-3
           "
         >
-          <UsersRound className="w-9 h-9 text-white" />
+          <UsersRound className="w-7 h-7 text-white" />
         </div>
 
         <div>
