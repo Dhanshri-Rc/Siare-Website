@@ -152,10 +152,10 @@ export default function Events() {
             </h1>
 
             <div className="flex mt-5 mb-6 overflow-hidden rounded-full w-fit">
-              <span className="h-[4px] w-[68px] bg-[#43aa37]"></span>
-              <span className="h-[4px] w-[68px] bg-[#f6a313]"></span>
-              <span className="h-[4px] w-[68px] bg-[#ff352e]"></span>
-              <span className="h-[4px] w-[68px] bg-[#0875c9]"></span>
+              <span className="h-[4px] w-[30px] sm:w-[50px] bg-[#43aa37]"></span>
+              <span className="h-[4px] w-[30px] sm:w-[50px] bg-[#f6a313]"></span>
+              <span className="h-[4px] w-[30px] sm:w-[50px] bg-[#ff352e]"></span>
+              <span className="h-[4px] w-[30px] sm:w-[50px] bg-[#0875c9]"></span>
             </div>
 
             <p className="text-white text-[14px] sm:text-[14px] md:text-[15px] lg:text-[16px] leading-[1.55] mb-8 max-w-[560px]">

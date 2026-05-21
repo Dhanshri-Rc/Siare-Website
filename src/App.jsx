@@ -8,6 +8,8 @@ import Events from './pages/Events'
 import Membership from './pages/Membership'
 import Clients from './pages/Clients'
 import Contact from './pages/Contact'
+import ScrollToTop from './components/ScrollToTop'
+import ScrollToTopRoute from './components/ScrollToTopRoute'
 
 export default function App() {
   return (
@@ -15,6 +17,8 @@ export default function App() {
       <div className="min-h-screen flex flex-col">
         <Header />
         <main className="flex-1">
+          <ScrollToTopRoute />
+            <ScrollToTop />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
@@ -23,7 +27,9 @@ export default function App() {
             <Route path="/membership" element={<Membership />} />
             <Route path="/clients" element={<Clients />} />
             <Route path="/contact" element={<Contact />} />
+            
           </Routes>
+        
         </main>
         <Footer />
       </div>

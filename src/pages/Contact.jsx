@@ -8,19 +8,20 @@ const contactInfo = [
   {
     icon: <Mail size={22} className="text-white" />,
     title: 'EMAIL US',
-    lines: ['info@siare.org', 'support@siare.org'],
+    lines: ['contact@siaresociety.org'],
     bg: 'bg-navy',
   },
   {
     icon: <Phone size={22} className="text-white" />,
     title: 'CALL US',
-    lines: ['+91 123 456 7890', '+91 987 654 3210'],
+    lines: ['+91 738 735 5544'],
     bg: 'bg-navy',
   },
+
   {
     icon: <MapPin size={22} className="text-white" />,
     title: 'OUR OFFICE',
-    lines: ['SIARE Head Office', '123 Research Avenue,', 'Knowledge Park,', 'Nagpur, Maharashtra,', 'India – 440033'],
+    lines: ['Society of Integrated Academic Research and Education', '109/C, Sukhdev Nagar Ex2, Airport Rd, Indore, Madhya Pradesh 452005'],
     bg: 'bg-navy',
   },
   {
@@ -156,7 +157,7 @@ export default function Contact() {
 
           font-medium
 
-          leading-[1.35]
+         
         "
                   >
                     {item.title}
