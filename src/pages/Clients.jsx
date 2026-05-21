@@ -1,5 +1,5 @@
 import { ArrowRight, CalendarDays, Handshake, User } from "lucide-react";
-import clientsImg from "../assets/mem .jpeg";
+import clientsImg from "../assets/clienttt.png";
 // import icon3 from "../assets/icon3.png";
 import quoteBg from "../assets/temp.jpeg";
 
