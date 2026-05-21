@@ -153,7 +153,7 @@ export default function About() {
         className="relative h-auto min-h-[340px] md:min-h-[360px] lg:h-[400px] flex items-center bg-cover bg-center overflow-hidden"
         style={{ backgroundImage: `url(${aboutImg})` }}
       >
-        <div className="absolute inset-0 bg-[#001948]/65"></div>
+        <div className="absolute  bg-[#001948]/65"></div>
 
         <div className="relative z-10 w-full max-w-[1320px] mx-auto px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20 flex flex-col xl:flex-row items-start xl:items-center justify-between gap-6 py-8 lg:py-5">
           {/* Left Content */}
