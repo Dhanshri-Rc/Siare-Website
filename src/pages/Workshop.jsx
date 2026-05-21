@@ -20,10 +20,10 @@ import {
   BriefcaseBusiness,
   UserRound,
   TrendingUp,
-  Wrench 
 } from "lucide-react";
 import conferenceImg from "../assets/workshopbg.png";
 import { Link } from "react-router-dom";
+import eventIcon from "../assets/workIcon.png";
 
 export default function Workshop() {
   return (
@@ -99,16 +99,16 @@ export default function Workshop() {
         max-[670px]:gap-4
       "
           >
-{/* Workshop Icon Box */}
-<div
-  className="
+            {/* Workshop Icon Box */}
+            <div
+              className="
     group
 
-    w-[78px]
-    h-[78px]
+    w-[60px]
+    h-[60px]
 
-    max-[670px]:w-[72px]
-    max-[670px]:h-[72px]
+    max-[670px]:w-[62px]
+    max-[670px]:h-[62px]
 
     rounded-[10px]
 
@@ -129,20 +129,23 @@ export default function Workshop() {
 
     hover:shadow-[0_18px_40px_rgba(201,147,34,0.48)]
   "
->
-  <Wrench
-    size={40}
-    strokeWidth={2.2}
-    className="
-      text-white
+            >
+              <img
+                src={eventIcon}
+                alt="Workshop"
+                className="
+      w-[90px]
+      h-[90px]
+
+      object-contain
 
       transition-all duration-500
 
       group-hover:rotate-[10deg]
       group-hover:scale-110
     "
-  />
-</div>
+              />
+            </div>
 
             {/* Content */}
             <div className="w-full max-w-[680px]">
@@ -160,7 +163,6 @@ export default function Workshop() {
             mb-1
           "
               >
-               
                 WORKSHOP
               </p>
 
@@ -480,32 +482,86 @@ export default function Workshop() {
 
           <div className="flex items-center justify-between mt-4 mb-2">
             <BlockTitle title="Workshop Facilitators" className="mt-6" />
-            <button className="h-[36px] px-4 bg-[#f2f0ec] text-[#c99322] border border-[#c99322] hover:bg-[#c99322] hover:text-white rounded-[6px] text-[12px] font-semibold flex items-center gap-2">
+
+            <button className="h-[36px] px-4 bg-[#f2f0ec] text-[#c99322] border border-[#c99322] hover:bg-[#c99322] hover:text-white rounded-[6px] text-[12px] font-semibold flex items-center gap-2 transition-all duration-300">
               VIEW ALL FACILITATORS <ArrowRight size={15} />
             </button>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
             {[
-              "Dr. Robert Anderson",
-              "Dr. Ananya Sharma",
-              "Dr. Kenji Tanaka",
-              "Dr. Maria Gonzalez",
-            ].map((n, i) => (
+              [
+                "Dr. Robert Anderson",
+                "Professor of Statistics",
+                "Stanford University, USA",
+                "Expertise: Research Methodology, Data Science",
+                "men",
+                60,
+              ],
+              [
+                "Dr. Ananya Sharma",
+                "Associate Professor",
+                "IIT Delhi, India",
+                "Expertise: Data Analysis, SPSS, R Programming",
+                "women",
+                44,
+              ],
+              [
+                "Dr. Kenji Tanaka",
+                "Senior Researcher",
+                "University of Tokyo, Japan",
+                "Expertise: Quantitative Methods, Analytics",
+                "men",
+                32,
+              ],
+              [
+                "Dr. Maria Gonzalez",
+                "Data Scientist",
+                "MIT, USA",
+                "Expertise: Machine Learning, Data Visualization",
+                "women",
+                55,
+              ],
+            ].map(([n, r, u, e, g, id], i) => (
               <div
                 key={i}
-                className="border border-[#dce3ee] rounded-[8px] overflow-hidden bg-white text-center"
+                className="
+        group
+        border border-[#dce3ee]
+        rounded-[8px]
+        overflow-hidden
+        bg-white
+        text-center
+        shadow-[0_6px_18px_rgba(7,29,79,0.06)]
+        transition-all duration-300
+        hover:-translate-y-[4px]
+        hover:shadow-[0_14px_32px_rgba(7,29,79,0.14)]
+      "
               >
                 <img
-                  src={`https://randomuser.me/api/portraits/${i === 1 || i === 3 ? "women" : "men"}/${30 + i}.jpg`}
-                  className="w-full h-[120px] object-cover"
+                  src={`https://randomuser.me/api/portraits/${g}/${id}.jpg`}
+                  alt={n}
+                  className="
+          w-full
+          h-[120px]
+          object-cover
+          object-top
+          transition-all duration-300
+          group-hover:scale-[1.03]
+        "
                 />
+
                 <div className="p-3">
                   <h4 className="text-[#071d4f] text-[12px] font-bold">{n}</h4>
-                  <p className="text-[#334968] text-[10px] mt-1">
-                    University Expert
+
+                  <p className="text-[#071d4f] text-[10px] mt-3 leading-[1.5]">
+                    {r}
+                    <br />
+                    {u}
                   </p>
-                  <p className="text-[#071d4f] text-[10px] mt-2">
-                    Topic: Innovation Trends
+
+                  <p className="text-[#071d4f] text-[10px] mt-3 leading-[1.5]">
+                    {e}
                   </p>
                 </div>
               </div>
@@ -564,7 +620,7 @@ export default function Workshop() {
             ].map(([a, b, price, color, bg], i) => (
               <div
                 key={i}
-                className="border border-[#dce3ee] rounded-[8px] px-4 py-3 flex items-center gap-3 mb-3 bg-white"
+                className="border border-[#dce3ee] rounded-[8px] px-4 py-2 flex items-center gap-3 mb-2 bg-white"
               >
                 <div
                   className={`w-[42px] h-[42px] rounded-full ${bg} flex items-center justify-center shrink-0`}
@@ -589,7 +645,7 @@ export default function Workshop() {
 
             <button
               className="
-      group w-full h-[42px]
+      group w-full h-[40px]
       bg-[#e2ac39]
       text-white rounded-[6px]
       font-bold text-[13px]
@@ -611,7 +667,7 @@ export default function Workshop() {
 
             <button
               className="
-      group w-full h-[42px] mt-3
+      group w-full h-[40px] mt-2
       bg-[#f2f0ec]
       text-[#c99322]
       border border-[#c99322]
@@ -634,7 +690,7 @@ export default function Workshop() {
             </button>
           </SideCard>
 
-          <SideCard title="Conference Highlights">
+          <SideCard title="Workshop Highlights">
             {[
               "Hands-on practical sessions",
               "Real-world datasets & case studies",
@@ -650,7 +706,7 @@ export default function Workshop() {
         text-[#071d4f]
         text-[12px]
         flex items-center gap-2
-        mb-2
+        mb-1
 
         transition-all duration-300
         hover:text-[#c99322]
@@ -672,33 +728,33 @@ export default function Workshop() {
             ))}
           </SideCard>
 
-<SideCard title="Important Dates">
-  {[
-    ["15 Jul, 2025", "Early Bird Registration Ends"],
-    ["15 Aug, 2025", "Standard Registration Ends"],
-    ["16 Aug, 2025", "Late Registration Starts"],
-    ["20 Aug, 2025", "Last Date for Queries"],
-    ["22 Aug, 2025", "Workshop Begins"],
-  ].map(([date, title], i, arr) => (
-    <div
-      key={i}
-      className="
+          <SideCard title="Important Dates">
+            {[
+              ["15 Jul, 2025", "Early Bird Registration Ends"],
+              ["15 Aug, 2025", "Standard Registration Ends"],
+              ["16 Aug, 2025", "Late Registration Starts"],
+              ["20 Aug, 2025", "Last Date for Queries"],
+              ["22 Aug, 2025", "Workshop Begins"],
+            ].map(([date, title], i, arr) => (
+              <div
+                key={i}
+                className="
         group
         relative
         flex
-        gap-3
+        gap-2
         pl-[2px]
-        pb-4
+        pb-2
 
         transition-all duration-300
         hover:translate-x-[4px]
         cursor-pointer
       "
-    >
-      {/* Timeline */}
-      <div className="relative flex flex-col items-center shrink-0">
-        <span
-          className="
+              >
+                {/* Timeline */}
+                <div className="relative flex flex-col items-center shrink-0">
+                  <span
+                    className="
             w-[10px]
             h-[10px]
             rounded-full
@@ -711,25 +767,25 @@ export default function Workshop() {
             group-hover:bg-[#c99322]
             group-hover:scale-110
           "
-        />
+                  />
 
-        {i !== arr.length - 1 && (
-          <span
-            className="
+                  {i !== arr.length - 1 && (
+                    <span
+                      className="
               absolute
               top-[10px]
               w-[2px]
               h-[38px]
               bg-[#ececec]
             "
-          />
-        )}
-      </div>
+                    />
+                  )}
+                </div>
 
-      {/* Content */}
-      <div className="leading-[1.2]">
-        <p
-          className="
+                {/* Content */}
+                <div className="leading-[1.2]">
+                  <p
+                    className="
             text-[#071d4f]
             text-[12px]
             font-bold
@@ -737,36 +793,35 @@ export default function Workshop() {
             transition-colors duration-300
             group-hover:text-[#c99322]
           "
-        >
-          {date}
-        </p>
+                  >
+                    {date}
+                  </p>
 
-        <p className="text-[#071d4f] text-[12px] mt-[3px]">
-          {title}
-        </p>
-      </div>
-    </div>
-  ))}
-</SideCard>
+                  <p className="text-[#071d4f] text-[12px] mt-[2px]">{title}</p>
+                </div>
+              </div>
+            ))}
+          </SideCard>
 
           <SideCard title="Contact Organizer">
-            <p className="flex gap-3 text-[12px] font-semibold text-[#071d4f] mb-3">
-              <Mail size={16} className="text-[#0d6efd]" /> info@icet2025.com
+            <p className="flex gap-2 text-[12px] font-semibold text-[#071d4f] mb-2">
+              <Mail size={16} className="text-[#c99322]" />{" "}
+              contact@siaresociety.org
             </p>
-            <p className="flex gap-3 text-[12px] font-semibold text-[#071d4f] mb-3">
-              <Phone size={16} className="text-[#0d6efd]" /> +1 123 456 7890
+            <p className="flex gap-2 text-[12px] font-semibold text-[#071d4f] mb-2">
+              <Phone size={16} className="text-[#c99322]" /> +91 738 735 5544
             </p>
-            <p className="flex gap-3 text-[12px] font-semibold text-[#071d4f]">
-              <Globe size={16} className="text-[#0d6efd]" /> www.icet2025.com
+            <p className="flex gap-2 text-[12px] font-semibold text-[#071d4f]">
+              <Globe size={16} className="text-[#c99322]" /> siaresociety.org
             </p>
           </SideCard>
         </aside>
       </section>
 
-{/* CTA */}
-<section className="w-full max-w-[1240px] mx-auto px-6 pb-8">
-  <div
-    className="
+      {/* CTA */}
+      <section className="w-full max-w-[1240px] mx-auto px-6 pb-8">
+        <div
+          className="
       relative overflow-hidden
       bg-[#071d4f]
       rounded-[8px]
@@ -776,39 +831,72 @@ export default function Workshop() {
       text-white
       shadow-[0_8px_22px_rgba(7,29,79,0.18)]
     "
-  >
-    <div className="absolute right-[80px] bottom-0 w-[420px] h-full opacity-30 pointer-events-none bg-[radial-gradient(circle,#006aff_1px,transparent_1.5px)] [background-size:10px_10px]" />
+        >
+          <div className="absolute right-[80px] bottom-0 w-[420px] h-full opacity-30 pointer-events-none bg-[radial-gradient(circle,#006aff_1px,transparent_1.5px)] [background-size:10px_10px]" />
 
-    <div className="relative z-10 flex items-center gap-5">
-      <div className="w-[58px] h-[58px] rounded-full border border-[#006aff] flex items-center justify-center shrink-0">
-        <TrendingUp size={30} className="text-[#006aff]" />
-      </div>
+          <div className="relative z-10 flex items-center gap-5">
+            <div className="w-[58px] h-[58px] rounded-full border border-[#006aff] flex items-center justify-center shrink-0">
+              <TrendingUp size={30} className="text-[#006aff]" />
+            </div>
 
-      <p className="font-bold text-[16px] leading-[1.7]">
-        Enhance your research skills with practical training <br className="hidden sm:block" />
-        and real-world data analysis experience.
-      </p>
-    </div>
+            <p className="font-bold text-[16px] leading-[1.7]">
+              Enhance your research skills with practical training{" "}
+              <br className="hidden sm:block" />
+              and real-world data analysis experience.
+            </p>
+          </div>
 
-    <button
-      className="
-        group relative z-10
-        h-[46px] px-10
-        rounded-[6px]
-        bg-[#e2ac39]
-        text-white font-bold text-[13px]
-        flex items-center gap-4
-        transition-all duration-300
-        hover:bg-[#c99322]
-        hover:-translate-y-[2px]
-        hover:shadow-[0_10px_25px_rgba(226,172,57,0.45)]
-      "
-    >
-      REGISTER NOW
-      <ArrowRight size={20} className="transition-all duration-300 group-hover:translate-x-1" />
-    </button>
-  </div>
-</section>
+          <button
+            className="
+          relative z-10
+
+          h-[42px]
+          sm:h-[46px]
+
+          px-5 sm:px-7
+
+          rounded-full
+
+          bg-[linear-gradient(180deg,#f3c04d_0%,#e2ac39_52%,#b9851e_100%)]
+
+          border border-[#c8932a]
+
+          text-[#071d4f]
+
+          text-[11px]
+          sm:text-[13px]
+
+          uppercase
+          font-bold
+
+          flex items-center justify-center gap-2
+
+          shadow-[0_10px_22px_rgba(226,172,57,0.28)]
+
+          transition-all duration-300
+
+          hover:-translate-y-1
+          hover:bg-none
+          hover:bg-[#c8932a]
+          hover:text-white
+          hover:shadow-[0_14px_28px_rgba(226,172,57,0.38)]
+
+          whitespace-nowrap
+
+          w-full
+          sm:w-auto
+
+          md:ml-auto
+        "
+          >
+            REGISTER NOW
+            <ArrowRight
+              size={20}
+              className="transition-all duration-300 group-hover:translate-x-1"
+            />
+          </button>
+        </div>
+      </section>
     </main>
   );
 }
