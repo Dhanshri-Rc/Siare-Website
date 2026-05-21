@@ -1,5 +1,5 @@
-import { ArrowRight, Handshake } from "lucide-react";
-import clientsImg from "../assets/client1.png";
+import { ArrowRight, CalendarDays, Handshake, User } from "lucide-react";
+import clientsImg from "../assets/clientt.jpeg";
 // import icon3 from "../assets/icon3.png";
 import quoteBg from "../assets/temp.jpeg";
 
@@ -56,58 +56,58 @@ const internationalCollabs = [
   },
 ];
 
-const indianCollabs = [
-  {
-    name: "Amity University",
-    region: "Uttar Pradesh",
-    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjzUD4_Rm5czORDVe398oYCxdSRSK9MCzxEQ&s",
-  },
-  {
-    name: "Chandigarh University",
-    region: "Punjab",
-    logo: "https://images.seeklogo.com/logo-png/43/1/chandigarh-university-cu-logo-png_seeklogo-432515.png",
-  },
-  {
-    name: "Lovely Professional University",
-    region: "Punjab",
-    logo: "https://i.pinimg.com/736x/a0/75/0c/a0750c5df700b85f0d6498d84bbabc69.jpg",
-  },
-  {
-    name: "Vellore Institute of Technology",
-    region: "Tamil Nadu",
-    logo: "https://vit.ac.in/vdat2024/VIT_COLOURED%20LOGO.png",
-  },
-  {
-    name: "Manipal University Jaipur",
-    region: "Rajasthan",
-    logo: "https://d2lk14jtvqry1q.cloudfront.net/media/small_Manipal_University_Jaipur_b0a141f1c0_38b8c78a2d_77930b7e25.png",
-  },
-  {
-    name: "Symbiosis International (Deemed University)",
-    region: "Maharashtra",
-    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiKMC4xOUpECv6DKZoHu51h6RJiut7tx4mvQ&s",
-  },
-  {
-    name: "SRM University",
-    region: "Tamil Nadu",
-    logo: "https://vectorseek.com/wp-content/uploads/2023/10/SRM-University-Logo-Vector.svg-.png",
-  },
-  {
-    name: "Jain (Deemed-to-be University)",
-    region: "Karnataka",
-    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsrouLruZWZiJrTLnrTufgOrwpGnJYXq3WBA&s",
-  },
-  {
-    name: "KIIT University",
-    region: "Odisha",
-    logo: "https://img.favpng.com/21/9/19/kalinga-institute-of-industrial-technology-entrance-exam-deemed-university-kiit-group-of-institutions-png-favpng-ngiWKS2BTuENuewtnqNAYFD4y.jpg",
-  },
-  {
-    name: "Graphic Era Deemed to be University",
-    region: "Uttarakhand",
-    logo: "https://content3.jdmagicbox.com/comp/varanasi/s9/0542px542.x542.160609070042.k9s9/catalogue/graphic-era-deemed-tobe-university-dehradun-durgakund-varanasi-education-counselling-services-dselwjjd3z.jpg",
-  },
-];
+// const indianCollabs = [
+//   {
+//     name: "Amity University",
+//     region: "Uttar Pradesh",
+//     logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjzUD4_Rm5czORDVe398oYCxdSRSK9MCzxEQ&s",
+//   },
+//   {
+//     name: "Chandigarh University",
+//     region: "Punjab",
+//     logo: "https://images.seeklogo.com/logo-png/43/1/chandigarh-university-cu-logo-png_seeklogo-432515.png",
+//   },
+//   {
+//     name: "Lovely Professional University",
+//     region: "Punjab",
+//     logo: "https://i.pinimg.com/736x/a0/75/0c/a0750c5df700b85f0d6498d84bbabc69.jpg",
+//   },
+//   {
+//     name: "Vellore Institute of Technology",
+//     region: "Tamil Nadu",
+//     logo: "https://vit.ac.in/vdat2024/VIT_COLOURED%20LOGO.png",
+//   },
+//   {
+//     name: "Manipal University Jaipur",
+//     region: "Rajasthan",
+//     logo: "https://d2lk14jtvqry1q.cloudfront.net/media/small_Manipal_University_Jaipur_b0a141f1c0_38b8c78a2d_77930b7e25.png",
+//   },
+//   {
+//     name: "Symbiosis International (Deemed University)",
+//     region: "Maharashtra",
+//     logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiKMC4xOUpECv6DKZoHu51h6RJiut7tx4mvQ&s",
+//   },
+//   {
+//     name: "SRM University",
+//     region: "Tamil Nadu",
+//     logo: "https://vectorseek.com/wp-content/uploads/2023/10/SRM-University-Logo-Vector.svg-.png",
+//   },
+//   {
+//     name: "Jain (Deemed-to-be University)",
+//     region: "Karnataka",
+//     logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsrouLruZWZiJrTLnrTufgOrwpGnJYXq3WBA&s",
+//   },
+//   {
+//     name: "KIIT University",
+//     region: "Odisha",
+//     logo: "https://img.favpng.com/21/9/19/kalinga-institute-of-industrial-technology-entrance-exam-deemed-university-kiit-group-of-institutions-png-favpng-ngiWKS2BTuENuewtnqNAYFD4y.jpg",
+//   },
+//   {
+//     name: "Graphic Era Deemed to be University",
+//     region: "Uttarakhand",
+//     logo: "https://content3.jdmagicbox.com/comp/varanasi/s9/0542px542.x542.160609070042.k9s9/catalogue/graphic-era-deemed-tobe-university-dehradun-durgakund-varanasi-education-counselling-services-dselwjjd3z.jpg",
+//   },
+// ];
 
 function UnivCard({ name, region, country, logo }) {
   return (
@@ -191,10 +191,10 @@ export default function Clients() {
             OUR <span className="text-[#f6aa13]">MEMBERS</span>
           </h1>
           <div className="flex mt-3 mb-5 overflow-hidden rounded-full w-fit">
-            <span className="h-[3px] w-[24px] sm:w-[32px] bg-[#43aa37]"></span>
-            <span className="h-[3px] w-[24px] sm:w-[32px] bg-[#f6a313]"></span>
-            <span className="h-[3px] w-[24px] sm:w-[32px] bg-[#ff352e]"></span>
-            <span className="h-[3px] w-[24px] sm:w-[32px] bg-[#0875c9]"></span>
+            <span className="h-[4px] w-[24px] sm:w-[36px] bg-[#43aa37]"></span>
+            <span className="h-[4px] w-[24px] sm:w-[36px] bg-[#f6a313]"></span>
+            <span className="h-[4px] w-[24px] sm:w-[36px] bg-[#ff352e]"></span>
+            <span className="h-[4px] w-[24px] sm:w-[36px] bg-[#0875c9]"></span>
           </div>
           {/* Description */}
           <p
@@ -408,7 +408,7 @@ export default function Clients() {
               <span className="text-[#f6aa13]">◆</span>
 
               <h2 className="text-[20px] font-bold text-[#001b57] uppercase tracking-wide">
-                INTERNATIONAL COLLABORATIONS
+                OUR COLLABORATIONS
               </h2>
 
               <span className="text-[#f6aa13]">◆</span>
@@ -435,53 +435,222 @@ export default function Clients() {
           </div>
 
           <div className="text-center mt-8">
-            <button className="bg-[linear-gradient(180deg,#1251a0_0%,#0f468d_45%,#0c3067_100%)] text-white font-medium px-6 sm:px-7 py-3 rounded-full flex items-center gap-2 text-[11px] sm:text-sm uppercase mx-auto transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_10px_24px_rgba(12,48,103,0.32)]">
-              VIEW ALL INTERNATIONAL COLLABORATIONS
+            <button className="text-[#0c3067] border border-[#0c3067] bg-white rounded-[6px] font-medium px-6 sm:px-7 py-2 flex items-center gap-2 text-[11px] sm:text-sm uppercase mx-auto transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_10px_24px_rgba(12,48,103,0.32)]">
+              VIEW ALL COLLABORATIONS
               <ArrowRight size={15} />
             </button>
           </div>
         </div>
       </section>
 
-      {/* Indian Collaborations */}
-      <section className="py-10 sm:py-12 lg:py-14 bg-white">
-        <div className="w-full max-w-[1320px] mx-auto px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20">
-          <div className="text-center mb-10">
-            <div className="flex items-center justify-center gap-3 mb-3">
-              <div className="h-px flex-1 max-w-16 bg-[#e2ac39]" />
+      <section className="w-full bg-white py-6 sm:py-8 lg:py-10 overflow-hidden">
+  <div className="w-full max-w-[1320px] mx-auto px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20">
 
-              <span className="text-[#e2ac39]">◆</span>
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
 
-              <h2 className="text-[20px] font-bold text-[#001b57] uppercase tracking-wide">
-                INDIAN COLLABORATIONS
-              </h2>
+      {/* Recent Members */}
+      <div
+        className="
+          bg-white
+          border border-[#dfe8d8]
+          rounded-[18px]
+          p-5 sm:p-6
+          shadow-[0_10px_28px_rgba(0,0,0,0.05)]
+        "
+      >
+        <div className="flex items-center gap-3 mb-5">
+          <User className="text-[#43aa37]" size={30} />
 
-              <span className="text-[#e2ac39]">◆</span>
+          <h2 className="text-[#071d4f] text-[20px] font-bold uppercase">
+            OUR RECENT MEMBERS
+          </h2>
 
-              <div className="h-px flex-1 max-w-16 bg-[#e2ac39]" />
+          <span className="h-[2px] w-[60px] bg-[#43aa37]" />
+        </div>
+
+        <div className="space-y-2">
+          {[
+            ["Amity University", "Academic Institution", "India", "Joined", "May 2025", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjzUD4_Rm5czORDVe398oYCxdSRSK9MCzxEQ&s"],
+            ["Chandigarh University", "Academic Institution", "India", "Joined", "Apr 2025", "https://upload.wikimedia.org/wikipedia/commons/b/b0/Chandigarh_University_Seal.png?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original"],
+            ["Lovely Professional University", "Academic Institution", "India", "Joined", "April 2025", "https://i.pinimg.com/736x/a0/75/0c/a0750c5df700b85f0d6498d84bbabc69.jpg"],
+            ["Manipal University Jaipur", "Academic Institution", "India", "Joined", "Mar 2025", "https://cdn.universitykart.com//Content/upload/admin/uhjjm31d.wuj.png"],
+            ["Graphic Era (Deemed to be University)", "Academic Institution", "India", "Joined", "Mar 2025", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp2dexHKLMm22t4scE2RkoDdOHOjvXqDs-LQ&s"],
+          ].map(([name, type, country, label, date, logo], i) => (
+            <div
+              key={i}
+              className="
+                group
+                bg-white
+                border border-[#e5e7eb]
+                rounded-[9px]
+                px-3 py-2
+                flex items-center gap-4
+                transition-all duration-300
+                hover:-translate-y-1
+                hover:shadow-[0_10px_22px_rgba(67,170,55,0.12)]
+                hover:border-[#e2ac39]/40
+              "
+            >
+              <div className="w-[85px] h-[58px] border-r border-[#e5e7eb] flex items-center justify-center shrink-0">
+                <img
+                  src={logo}
+                  alt={name}
+                  className="max-w-[85px] max-h-[58px] object-contain"
+                />
+              </div>
+
+              <div className="flex-1 min-w-0">
+                <h4 className="text-[#071d4f] text-[13px] font-bold leading-tight">
+                  {name}
+                </h4>
+                <p className="text-[#334968] font-medium text-[12px] leading-[1.35]">
+                  {type}
+                  <br />
+                  {country}
+                </p>
+              </div>
+
+              <div className="flex items-start gap-2 min-w-[85px]">
+                <CalendarDays size={14} className="text-[#43aa37] mt-[2px]" />
+                <p className="text-[#071d4f] text-[11px] leading-[1.3] font-medium">
+                  {label}
+                  <br />
+                  {date}
+                </p>
+              </div>
             </div>
-
-            <p className="text-[#001b57] text-[14px] mx-auto font-medium">
-              SIARE collaborates with 100+ leading Indian universities,
-              institutes, and organizations <br /> to strengthen research,
-              education, and innovation across diverse disciplines.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 sm:gap-5">
-            {indianCollabs.map((c, i) => (
-              <UnivCard key={i} name={c.name} region={c.region} logo={c.logo} />
-            ))}
-          </div>
-
-          <div className="text-center mt-8">
-            <button className="border-2 border-[#e2ac39] text-[#e2ac39] font-medium px-6 sm:px-7 py-2.5 rounded-full flex items-center gap-2 text-[11px] sm:text-sm uppercase mx-auto transition-all duration-300 hover:bg-[#e2ac39] hover:text-[#f5f6f8] hover:-translate-y-1">
-              VIEW ALL INDIAN COLLABORATIONS
-              <ArrowRight size={15} />
-            </button>
-          </div>
+          ))}
         </div>
-      </section>
+
+        <div className="text-center mt-4">
+          <button
+            className="
+              h-[40px]
+              px-8
+              rounded-[5px]
+              border border-[#9aa9bd]
+              text-[#071d4f]
+              font-bold
+              text-[13px]
+              uppercase
+              inline-flex items-center gap-6
+              transition-all duration-300
+              hover:-translate-y-1
+              hover:bg-[#e2ac39]
+              hover:text-white
+              hover:border-[#e2ac39]
+              
+            "
+          >
+            VIEW ALL RECENT MEMBERS
+            <ArrowRight size={18} />
+          </button>
+        </div>
+      </div>
+
+      {/* Honorary Members */}
+      <div
+        className="
+          bg-white
+          border border-[#f0dfbd]
+          rounded-[18px]
+          p-5 sm:p-6
+          shadow-[0_10px_28px_rgba(0,0,0,0.05)]
+        "
+      >
+        <div className="flex items-center gap-3 mb-5">
+          <User className="text-[#e2ac39]" size={30} />
+
+          <h2 className="text-[#071d4f] text-[20px] font-bold uppercase">
+            OUR HONORARY MEMBERS
+          </h2>
+
+          <span className="h-[2px] w-[60px] bg-[#e2ac39]" />
+        </div>
+
+        <div className="space-y-2">
+          {[
+            ["Dr. Glenn T. May", "Professor Emeritus, Engineering", "United States", "Appointed", "May 2024", "https://randomuser.me/api/portraits/men/41.jpg"],
+            ["Prof. R. M. Bhatt", "Former Vice Chancellor", "India", "Appointed", "Mar 2024", "https://randomuser.me/api/portraits/men/52.jpg"],
+            ["Dr. Maria da Graça", "Research Director", "Portugal", "Appointed", "Jan 2024", "https://randomuser.me/api/portraits/women/45.jpg"],
+            ["Prof. Datuk Ir. Dr. Wahid bin Omar", "Former Dean, Engineering", "Malaysia", "Appointed", "Dec 2023", "https://randomuser.me/api/portraits/men/47.jpg"],
+            ["Prof. Soo-Kwang Lee", "Emeritus Professor", "South Korea", "Appointed", "Oct 2023", "https://randomuser.me/api/portraits/men/60.jpg"],
+          ].map(([name, role, country, label, date, img], i) => (
+            <div
+              key={i}
+              className="
+                group
+                bg-white
+                border border-[#e5e7eb]
+                rounded-[9px]
+                px-3 py-2
+                flex items-center gap-4
+                transition-all duration-300
+                hover:-translate-y-1
+                hover:shadow-[0_10px_22px_rgba(226,172,57,0.14)]
+                hover:border-[#e2ac39]/45
+              "
+            >
+              <div className="w-[58px] h-[58px] rounded-full overflow-hidden shrink-0">
+                <img
+                  src={img}
+                  alt={name}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+
+              <div className="flex-1 min-w-0">
+                <h4 className="text-[#071d4f] text-[13px] font-bold leading-tight">
+                  {name}
+                </h4>
+                <p className="text-[#334968] font-medium text-[12px] leading-[1.35]">
+                  {role}
+                  <br />
+                  {country}
+                </p>
+              </div>
+
+              <div className="flex items-start gap-2 min-w-[95px]">
+                <CalendarDays size={14} className="text-[#e2ac39] mt-[2px]" />
+                <p className="text-[#071d4f] text-[11px] leading-[1.3] font-medium">
+                  {label}
+                  <br />
+                  {date}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="text-center mt-4">
+          <button
+            className="
+              h-[40px]
+              px-8
+              rounded-[5px]
+              border border-[#9aa9bd]
+              text-[#071d4f]
+              font-bold
+              text-[13px]
+              uppercase
+              inline-flex items-center gap-6
+              transition-all duration-300
+              hover:-translate-y-1
+              hover:bg-[#e2ac39]
+              hover:text-white
+              hover:border-[#e2ac39]
+              hover:shadow-[0_10px_22px_rgba(226,172,57,0.25)]
+            "
+          >
+            VIEW ALL HONORARY MEMBERS
+            <ArrowRight size={18} />
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
       {/* CTA Banner */}
 

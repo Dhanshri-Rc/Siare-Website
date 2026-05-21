@@ -86,11 +86,12 @@ export default function Home() {
         </h1>
 
         {/* Color Line */}
-        <div className="flex mt-3 xl:mb-4 lg:mb-3 md:mb-2 sm:mb-1 mb-1 items-center ">
-          <span className="h-[3px] w-[22px] bg-[#e52320]" />
-          <span className="h-[3px] w-[22px] bg-[#22a83a]" />
-          <span className="h-[3px] w-[22px] bg-[#f8b51b]" />
-          <span className="h-[3px] w-[22px] bg-[#f05a24]" />
+        <div className="flex mt-3 xl:mb-4 lg:mb-3 md:mb-2 sm:mb-1 mb-1 items-center overflow-hidden rounded-full w-fit" >
+          
+          <span className="h-[4px] w-[26px] bg-[#22a83a]" />
+          <span className="h-[4px] w-[26px] bg-[#f8b51b]" />
+          <span className="h-[4px] w-[26px] bg-[#f05a24]" />
+          <span className="h-[4px] w-[26px] bg-[#0875c9]" />
         </div>
 
         {/* Description */}
