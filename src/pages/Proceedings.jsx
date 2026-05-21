@@ -1,15 +1,20 @@
-import { Send, Search } from "lucide-react";
+import {
+  Send,
+  Search,
+  FileText,
+  BadgeCheck,
+  Users,
+  Globe,
+  BarChart3,
+  ShieldCheck,
+} from "lucide-react";
 import procImg from "../assets/proc.png";
 import icon1 from "../assets/icon1.png";
 import icon2 from "../assets/icon2.png";
 import icon3 from "../assets/icon3.png";
 import icon4 from "../assets/icon4.png";
 import icon5 from "../assets/icon5.png";
-import protect from "../assets/protect.png";
-import document from "../assets/document.png";
-import people from "../assets/people.png";
-import security from "../assets/security.png";
-import bar from "../assets/bar.png";
+
 // import quoteImg from "../assets/q.png";
 import quoteBg from "../assets/temp.jpg";
 
@@ -70,29 +75,38 @@ const categories = [
   },
 ];
 
-// const sideFeatures = [
-//   "Scopus Indexed Proceedings",
-//   "DOI & ISSN Enabled",
-//   "Rigorous Peer Review",
-//   "Global Visibility & Impact",
-//   "SDG Aligned Research",
-// ];
-
-// const whyPublish = [
-//   "High-quality peer-reviewed publications",
-//   "Global indexing and discoverability",
-//   "Permanent DOI & ISSN assignment",
-//   "Wide dissemination and academic impact",
-//   "Support for sustainable development goals",
-// ];
 
 const trustBadges = [
-  { icon: protect, label: "Scopus Indexed Proceedings" },
-  { icon: document, label: "DOI & ISSN Enabled" },
-  { icon: people, label: "Rigorous Peer Review" },
-  { icon: icon4, label: "Global Visibility & Impact" },
-  { icon: bar, label: "SDG Aligned Research" },
-  { icon: security, label: "Ethical & Transparent" },
+  {
+    icon: FileText,
+    label: "Scopus Indexed\nProceedings",
+    color: "#1d66ff",
+  },
+  {
+    icon: BadgeCheck,
+    label: "DOI & ISSN\nEnabled",
+    color: "#1d66ff",
+  },
+  {
+    icon: Users,
+    label: "Rigorous\nPeer Review",
+    color: "#3458c5",
+  },
+  {
+    icon: Globe,
+    label: "Global Visibility\n& Impact",
+    color: "#1d66ff",
+  },
+  {
+    icon: BarChart3,
+    label: "SDG Aligned\nResearch",
+    color: "#f6a313",
+  },
+  {
+    icon: ShieldCheck,
+    label: "Ethical &\nTransparent",
+    color: "#1d66ff",
+  },
 ];
 
 export default function Proceedings() {
@@ -262,38 +276,81 @@ export default function Proceedings() {
           </div>
 
           {/* Trust Badges */}
-          <div className="mt-[28px] bg-[#f4f8fc] rounded-[5px] shadow-[0_4px_14px_rgba(0,0,0,0.08)] px-[16px] py-[18px]">
+          <div
+            className="mt-[28px] bg-[#f4f8fc] rounded-[10px]
+shadow-[0_4px_14px_rgba(0,0,0,0.08)]
+px-[10px] sm:px-[16px]
+py-[18px]"
+          >
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6">
-              {trustBadges.map((b, i) => (
-                <div
-                  key={i}
-                  className={`group flex flex-col items-center justify-center text-center px-[14px] min-h-[70px]
-            ${i !== trustBadges.length - 1 ? "lg:border-r lg:border-[#cdd8e5]" : ""}`}
-                >
-                  <img
-                    src={b.icon}
-                    alt={b.label}
-                    className="w-[30px] h-[30px] object-contain mb-[8px] transition-all duration-300 group-hover:scale-110"
-                  />
+              {trustBadges.map((b, i) => {
+                const Icon = b.icon;
 
-                  <span className="text-[10px] leading-[1.2] font-bold text-[#001b57] transition-colors duration-300 group-hover:text-[#f6aa13]">
-                    {b.label}
-                  </span>
-                </div>
-              ))}
+                return (
+                  <div
+                    key={i}
+                    className={`
+          group
+          flex flex-col items-center justify-center text-center
+
+          px-[14px]
+          py-[12px]
+
+          min-h-[92px]
+
+          ${
+            i !== trustBadges.length - 1
+              ? "lg:border-r lg:border-[#d6dfeb]"
+              : ""
+          }
+        `}
+                  >
+                    <Icon
+                      size={32}
+                      strokeWidth={1.9}
+                      color={b.color}
+                      className="
+              mb-[10px]
+              transition-all duration-300
+              group-hover:scale-110
+              group-hover:-translate-y-1
+            "
+                    />
+
+                    <span
+                      className="
+            whitespace-pre-line
+
+            text-[10px]
+            sm:text-[11px]
+
+            leading-[1.3]
+
+            font-bold
+
+            text-[#001b57]
+
+            transition-colors duration-300
+
+            group-hover:text-[#f6aa13]
+          "
+                    >
+                      {b.label}
+                    </span>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>
 
         {/* Quote Banner */}
       </section>
-     <section className="w-full py-6 sm:py-8 lg:py-10 overflow-hidden">
-
-  {/* Main Container */}
-  <div className="w-full max-w-[1320px] mx-auto px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20">
-
-    <div
-      className="
+      <section className="w-full py-6 sm:py-8 lg:py-10 overflow-hidden">
+        {/* Main Container */}
+        <div className="w-full max-w-[1320px] mx-auto px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20">
+          <div
+            className="
         relative overflow-hidden
 
         rounded-[20px]
@@ -314,22 +371,20 @@ export default function Proceedings() {
         transition-all duration-500
         hover:shadow-[0_24px_45px_rgba(0,0,0,0.12)]
       "
-      style={{
-        backgroundImage: `
+            style={{
+              backgroundImage: `
           linear-gradient(rgba(0,28,85,0.92), rgba(0,28,85,0.92)),
           url(${quoteBg})
         `,
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-      }}
-    >
-
-      {/* Left Content */}
-      <div className="flex-1 relative z-10">
-
-        <p
-          className="
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "cover",
+            }}
+          >
+            {/* Left Content */}
+            <div className="flex-1 relative z-10">
+              <p
+                className="
             text-white
 
             text-[13px]
@@ -342,23 +397,21 @@ export default function Proceedings() {
 
             max-w-[760px]
           "
-        >
-          At SIARE, we believe that meaningful research leads to
-          real-world impact.
-          <br />
+              >
+                At SIARE, we believe that meaningful research leads to
+                real-world impact.
+                <br />
+                Together, we{" "}
+                <span className="text-[#e2ac39] font-semibold">
+                  advance knowledge, inspire innovation, and build a better
+                  future.
+                </span>
+              </p>
+            </div>
 
-          Together, we{" "}
-
-          <span className="text-[#e2ac39] font-semibold">
-            advance knowledge, inspire innovation, and build a
-            better future.
-          </span>
-        </p>
-      </div>
-
-      {/* Right Button */}
-      <button
-        className="
+            {/* Right Button */}
+            <button
+              className="
           relative z-10
 
           h-[42px]
@@ -399,18 +452,16 @@ export default function Proceedings() {
 
           md:ml-auto
         "
-      >
-        <Send
-          size={15}
-          className="transition-transform duration-300 group-hover:translate-x-1"
-        />
-
-        Submit Proposal
-      </button>
-
-    </div>
-  </div>
-</section>
+            >
+              <Send
+                size={15}
+                className="transition-transform duration-300 group-hover:translate-x-1"
+              />
+              Submit Proposal
+            </button>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

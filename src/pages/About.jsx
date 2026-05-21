@@ -16,6 +16,10 @@ import {
   CalendarDays,
   Lightbulb,
   Zap,
+  ShieldCheck,
+  Trophy,
+  UsersRound,
+  Target,
 } from "lucide-react";
 
 const whatWeDo = [
@@ -74,6 +78,72 @@ const coreObjectives = [
     text: "Enhance research visibility\nthrough indexing, DOI\nassignment, and open\nscholarly access",
   },
 ];
+
+const values = [
+  {
+    icon: ShieldCheck,
+    title: "Integrity",
+    desc: "ETHICAL, TRANSPARENT, AND\nRELIABLE ACADEMIC PRACTICES",
+  },
+  {
+    icon: Trophy,
+    title: "Quality",
+    desc: "MAINTAINING RIGOROUS\nINTERNATIONAL PUBLISHING\nSTANDARDS",
+  },
+  {
+    icon: Lightbulb,
+    title: "Innovation",
+    desc: "ENCOURAGING DIGITAL TOOLS, AI\nADOPTION, AND NEW\nMETHODOLOGIES",
+  },
+  {
+    icon: UsersRound,
+    title: "Inclusivity",
+    desc: "PROVIDING EQUAL OPPORTUNITIES\nFOR SCHOLARS WORLDWIDE",
+  },
+  {
+    icon: Target,
+    title: "Impact",
+    desc: "ENSURING RESEARCH CONTRIBUTES\nTO GLOBAL DEVELOPMENT GOALS",
+  },
+];
+
+const organizationStructure = [
+  {
+    title: "Executive Committee",
+    desc: "A team of senior scholars and advisors who guide the strategic direction of SIARE.",
+  },
+  {
+    title: "Editorial & Proceedings\nCommittee",
+    desc: "Handles peer review coordination, ethical checks, and proceedings publication.",
+  },
+  {
+    title: "Academic Council",
+    desc: "Experts from multiple disciplines who oversee academic quality, event partnerships, and research programs.",
+  },
+];
+
+// const siareDoes = [
+//   {
+//     icon: BookOpen,
+//     title: "Conference Proceedings Publication",
+//     desc: "We publish peer-reviewed proceedings across disciplines such as Engineering, Social Sciences, Management, Agriculture, Biological Sciences, Pharmacy, Humanities, and more.",
+//   },
+//   {
+//     icon: CalendarDays,
+//     title: "Academic Events & Conferences",
+//     desc: "SIARE partners with universities and organizations worldwide to host conferences, research summits, and thematic symposiums.",
+//   },
+//   {
+//     icon: GraduationCap,
+//     title: "Training & Capacity Building",
+//     desc: "Workshops and training modules on research writing, publishing ethics, research analytics, and digital tools.",
+//   },
+//   {
+//     icon: UsersRound,
+//     title: "Research Collaboration Facilitation",
+//     desc: "Connecting researchers with institutions and global partners for collaborative projects.",
+//   },
+// ];
 
 export default function About() {
   return (
@@ -227,16 +297,17 @@ export default function About() {
         </div>
 
         {/* Core Objectives */}
-        <section className="bg-[#f4f8fc] py-[46px] px-4">
-          <div className="w-full max-w-[1520px] mx-auto px-6 sm:px-8 md:px-12 lg:px-2 xl:px-15 ">
-            <div className="text-center mb-[62px]">
-              <h2 className=" text-[20px] uppercase font-bold text-[#001b57] ">
+        <section className="bg-[#f4f8fc] py-8 sm:py-10 lg:py-[46px] px-4">
+          <div className="w-full max-w-[1320px] mx-auto px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20">
+            <div className="text-center mb-8 sm:mb-10 lg:mb-[62px]">
+              <h2 className="text-[20px] sm:text-[22px] font-bold uppercase text-[#001b57]">
                 Our Core Objectives
               </h2>
-              <div className="w-[80px] h-[4px] bg-[#c8932a] mx-auto mt-[10px] "></div>
+
+              <div className="w-[70px] sm:w-[80px] h-[4px] bg-[#c8932a] mx-auto mt-[10px]"></div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[24px]">
+            <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 sm:gap-5 lg:gap-[24px]">
               {coreObjectives.map((item, i) => {
                 const Icon = item.icon;
 
@@ -245,21 +316,22 @@ export default function About() {
                     key={i}
                     className="bg-white rounded-[14px] border border-[#e5ebf1]
             shadow-[0_3px_10px_rgba(0,0,0,0.06)]
-            px-[24px] py-[26px]
-            min-h-[104px]
-            flex items-center gap-[18px]
+            px-4 sm:px-5 lg:px-[24px]
+            py-5 lg:py-[26px]
+            min-h-[96px] lg:min-h-[104px]
+            flex items-center gap-4 lg:gap-[18px]
             transition-all duration-300
             hover:-translate-y-1 hover:shadow-[0_10px_24px_rgba(0,0,0,0.10)]"
                   >
-                    <div className="w-[48px] h-[48px] rounded-[12px] bg-[#fbf3df] flex items-center justify-center shrink-0">
+                    <div className="w-[44px] h-[44px] lg:w-[48px] lg:h-[48px] rounded-[12px] bg-[#fbf3df] flex items-center justify-center shrink-0">
                       <Icon
-                        size={24}
+                        size={22}
                         strokeWidth={2}
                         className="text-[#d5a21f]"
                       />
                     </div>
 
-                    <p className="whitespace-pre-line text-[14px] md:text-[16px] leading-[1.18] font-semibold text-[#344154]">
+                    <p className="whitespace-pre-line text-[12px] sm:text-[14px] md:text-[14px] lg:text-[14px] leading-[1.25] font-semibold text-[#344154]">
                       {item.text}
                     </p>
                   </div>
@@ -268,49 +340,131 @@ export default function About() {
             </div>
           </div>
         </section>
-        {/* Core Objectives */}
+      </section>
 
-
-        {/* Quote Banner */}
+      {/* Our Values */}
+      <section className="bg-[#071b44] py-[44px] sm:py-[36px] lg:py-[46px] w-full">
         <div
-          className="mt-[34px] max-w-[1100px] mx-auto rounded-[20px]
+          className="
+    max-w-[1050px]
+
+    mx-4
+    sm:mx-6
+    md:mx-8
+    lg:mx-auto
+
+    px-2
+    sm:px-4
+  "
+        >
+          <div className="text-center mb-[50px]">
+            <h2 className="text-[20px] sm:text-[24px] font-bold uppercase text-white">
+              Our Values
+            </h2>
+            <div className="w-[64px] h-[3px] bg-[#c8932a] mx-auto mt-[8px]"></div>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-y-[40px] gap-x-[36px]">
+            {values.map((item, i) => {
+              const Icon = item.icon;
+
+              return (
+                <div key={i} className="flex flex-col items-center text-center">
+                  <div className="w-[58px] h-[58px] rounded-full bg-white/10 border border-white/20 flex items-center justify-center mb-[16px]">
+                    <Icon
+                      size={25}
+                      strokeWidth={2}
+                      className="text-[#c8932a]"
+                    />
+                  </div>
+
+                  <h3 className="text-[14px] font-bold text-white leading-none mb-[6px]">
+                    {item.title}
+                  </h3>
+
+                  <p className="whitespace-pre-line text-[9px] sm:text-[11px] leading-[1.35] font-semibold tracking-[0.8px] text-white/40 uppercase">
+                    {item.desc}
+                  </p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* Organizational Structure */}
+      <section className="bg-white py-[62px] px-4">
+        <div className="w-full max-w-[1320px] mx-auto px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20">
+          <div className="text-center mb-[60px]">
+            <h2 className="text-[20px] sm:text-[22px] font-bold uppercase text-[#001b57]">
+              Organizational Structure
+            </h2>
+
+            <div className="w-[80px] h-[3px] bg-[#c8932a] mx-auto mt-[10px]"></div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-[30px]">
+            {organizationStructure.map((item, i) => (
+              <div
+                key={i}
+                className="bg-[#f7f9fc] rounded-[22px] min-h-[205px]
+          px-[36px] py-[34px]
+          flex flex-col items-center justify-center text-center
+          transition-all duration-300
+          hover:-translate-y-1 hover:shadow-[0_14px_30px_rgba(0,0,0,0.10)]"
+              >
+                <h3 className="whitespace-pre-line text-[20px] sm:text-[18px] font-bold text-[#001b57] leading-[1.25] mb-[18px]">
+                  {item.title}
+                </h3>
+
+                <p className="text-[14px] sm:text-[14px] leading-[1.6] font-medium text-black/60">
+                  {item.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Quote Banner */}
+      <div 
+        className="mt-[34px] max-w-[1100px] mx-auto rounded-[20px]
   px-[20px] sm:px-[38px]
-  py-[18px]
+  py-[18px] my-[40px] bg-white
   flex flex-col sm:flex-row items-start sm:items-center
   gap-[18px] sm:gap-[28px]
   shadow-[0_18px_35px_rgba(0,0,0,0.08)]
   overflow-hidden relative"
-          style={{
-            backgroundImage: `
+        style={{
+          backgroundImage: `
       linear-gradient(rgba(0,28,85,0.92), rgba(0,28,85,0.92)),
       url(${quoteBg})
     `,
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
-          }}
-        >
-          {/* Quote Circle */}
-          <div className="w-[62px] h-[62px] rounded-full bg-[#0875c9] flex items-center justify-center shrink-0 relative z-10">
-            <img
-              src={quoteImg}
-              alt="quote"
-              className="w-[50px] h-[50px] object-contain"
-            />
-          </div>
-
-          {/* Text */}
-          <p className="relative z-10 text-white text-[14px] sm:text-[15px] leading-[1.75] font-medium">
-            At SIARE, we believe that meaningful research leads to real-world
-            impact.
-            <br />
-            Together, we{" "}
-            <span className="text-[#f6a313] font-semibold">
-              advance knowledge, inspire innovation, and build a better future.
-            </span>
-          </p>
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+        }}
+      >
+        {/* Quote Circle */}
+        <div className="w-[62px] h-[62px] rounded-full bg-[#0875c9] flex items-center justify-center shrink-0 relative z-10">
+          <img
+            src={quoteImg}
+            alt="quote"
+            className="w-[50px] h-[50px] object-contain"
+          />
         </div>
-      </section>
+
+        {/* Text */}
+        <p className="relative z-10 text-white text-[14px] sm:text-[15px] leading-[1.75] font-medium">
+          At SIARE, we believe that meaningful research leads to real-world
+          impact.
+          <br />
+          Together, we{" "}
+          <span className="text-[#f6a313] font-semibold">
+            advance knowledge, inspire innovation, and build a better future.
+          </span>
+        </p>
+      </div>
     </div>
   );
 }

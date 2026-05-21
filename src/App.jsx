@@ -10,6 +10,7 @@ import Clients from './pages/Clients'
 import Contact from './pages/Contact'
 import ScrollToTop from './components/ScrollToTop'
 import ScrollToTopRoute from './components/ScrollToTopRoute'
+import EventDetailsMiddle from './pages/Conference'
 
 export default function App() {
   return (
@@ -27,6 +28,7 @@ export default function App() {
             <Route path="/membership" element={<Membership />} />
             <Route path="/clients" element={<Clients />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/eventConference" element={<EventDetailsMiddle />} />
             
           </Routes>
         

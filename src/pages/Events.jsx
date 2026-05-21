@@ -27,6 +27,7 @@ import event4 from "../assets/event4.png";
 // import document from "../assets/document.png";
 // import quoteImg from "../assets/q.png";
 import quoteBg from "../assets/temp.jpg";
+import { Link } from "react-router-dom";
 
 const sideTypes = [
   {
@@ -58,6 +59,7 @@ const events = [
     borderColor: "hover:border-siare-green",
     btnColor: "border-siare-green text-siare-green hover:bg-siare-green",
     dateBg: "bg-[#43aa37]",
+    route: "/eventConference",
   },
   {
     img: event2,
@@ -69,6 +71,7 @@ const events = [
     borderColor: "hover:border-orange-400",
     btnColor: "border-orange-400 text-orange-500 hover:bg-orange-500",
     dateBg: "bg-[#f97316]",
+    route: "/eventConference",
   },
   {
     img: event3,
@@ -80,6 +83,7 @@ const events = [
     borderColor: "hover:border-red-400",
     btnColor: "border-red-400 text-red-500 hover:bg-red-500",
     dateBg: "bg-[#ff352e]",
+    route: "/eventWorkshop",
   },
   {
     img: event4,
@@ -91,6 +95,7 @@ const events = [
     borderColor: "hover:border-siare-blue",
     btnColor: "border-siare-blue text-siare-blue hover:bg-siare-blue",
     dateBg: "bg-[#1558c8]",
+    route: "/eventWebinar",
   },
 ];
 
@@ -326,7 +331,7 @@ export default function Events() {
                     <MapPin size={15} />
                     {ev.location}
                   </div>
-
+<Link to={ev.route}>
                   <button
                     className={`group/btn border ${ev.btnColor}
           font-semibold px-4 py-[10px] rounded-[6px]
@@ -340,6 +345,7 @@ export default function Events() {
                       className="transition-transform duration-300 group-hover/btn:translate-x-1"
                     />
                   </button>
+                  </Link>
                 </div>
               </div>
             ))}
