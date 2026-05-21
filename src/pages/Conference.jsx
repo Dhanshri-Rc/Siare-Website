@@ -60,7 +60,7 @@ export default function EventDetailsMiddle() {
 
       <span>›</span>
       
-            <span>International Conference on Engineering & Technology </span>
+            {/* <span>International Conference on Engineering & Technology </span> */}
     </div>
 
     <div

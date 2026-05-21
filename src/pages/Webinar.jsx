@@ -31,7 +31,7 @@ export default function EventDetailsMiddle() {
           max-[670px]:min-h-[400px]
           max-[480px]:min-h-[470px]
           max-[344px]:min-h-[505px]
-          max-[320px]:min-h-[540px]
+          max-[320px]:min-h-[560px]
         "
         style={{
           backgroundImage: `url(${conferenceImg})`,
@@ -50,7 +50,7 @@ export default function EventDetailsMiddle() {
               Events
             </Link>
             <span>›</span>
-            <span>Webinar on Research Publishing & Ethics</span>
+            {/* <span>Webinar on Research Publishing & Ethics</span> */}
           </div>
 
           <div className="flex flex-row gap-5 max-[670px]:gap-3 max-[670px]:items-start">
