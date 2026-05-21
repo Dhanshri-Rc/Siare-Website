@@ -1,5 +1,5 @@
 import { ArrowRight, CalendarDays, Handshake, User } from "lucide-react";
-import clientsImg from "../assets/clientt.jpeg";
+import clientsImg from "../assets/mem .jpeg";
 // import icon3 from "../assets/icon3.png";
 import quoteBg from "../assets/temp.jpeg";
 
@@ -56,58 +56,7 @@ const internationalCollabs = [
   },
 ];
 
-// const indianCollabs = [
-//   {
-//     name: "Amity University",
-//     region: "Uttar Pradesh",
-//     logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjzUD4_Rm5czORDVe398oYCxdSRSK9MCzxEQ&s",
-//   },
-//   {
-//     name: "Chandigarh University",
-//     region: "Punjab",
-//     logo: "https://images.seeklogo.com/logo-png/43/1/chandigarh-university-cu-logo-png_seeklogo-432515.png",
-//   },
-//   {
-//     name: "Lovely Professional University",
-//     region: "Punjab",
-//     logo: "https://i.pinimg.com/736x/a0/75/0c/a0750c5df700b85f0d6498d84bbabc69.jpg",
-//   },
-//   {
-//     name: "Vellore Institute of Technology",
-//     region: "Tamil Nadu",
-//     logo: "https://vit.ac.in/vdat2024/VIT_COLOURED%20LOGO.png",
-//   },
-//   {
-//     name: "Manipal University Jaipur",
-//     region: "Rajasthan",
-//     logo: "https://d2lk14jtvqry1q.cloudfront.net/media/small_Manipal_University_Jaipur_b0a141f1c0_38b8c78a2d_77930b7e25.png",
-//   },
-//   {
-//     name: "Symbiosis International (Deemed University)",
-//     region: "Maharashtra",
-//     logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiKMC4xOUpECv6DKZoHu51h6RJiut7tx4mvQ&s",
-//   },
-//   {
-//     name: "SRM University",
-//     region: "Tamil Nadu",
-//     logo: "https://vectorseek.com/wp-content/uploads/2023/10/SRM-University-Logo-Vector.svg-.png",
-//   },
-//   {
-//     name: "Jain (Deemed-to-be University)",
-//     region: "Karnataka",
-//     logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsrouLruZWZiJrTLnrTufgOrwpGnJYXq3WBA&s",
-//   },
-//   {
-//     name: "KIIT University",
-//     region: "Odisha",
-//     logo: "https://img.favpng.com/21/9/19/kalinga-institute-of-industrial-technology-entrance-exam-deemed-university-kiit-group-of-institutions-png-favpng-ngiWKS2BTuENuewtnqNAYFD4y.jpg",
-//   },
-//   {
-//     name: "Graphic Era Deemed to be University",
-//     region: "Uttarakhand",
-//     logo: "https://content3.jdmagicbox.com/comp/varanasi/s9/0542px542.x542.160609070042.k9s9/catalogue/graphic-era-deemed-tobe-university-dehradun-durgakund-varanasi-education-counselling-services-dselwjjd3z.jpg",
-//   },
-// ];
+
 
 function UnivCard({ name, region, country, logo }) {
   return (
