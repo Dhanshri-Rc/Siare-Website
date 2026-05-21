@@ -60,7 +60,7 @@ export default function EventDetailsMiddle() {
 
       <span>›</span>
       
-            {/* <span>International Conference on Engineering & Technology </span> */}
+            <span className="hidden sm:block">International Conference on Engineering & Technology </span>
     </div>
 
     <div
@@ -273,6 +273,7 @@ export default function EventDetailsMiddle() {
           </button>
 
           {/* SHARE */}
+          <Link to="/">
           <button
             className="
               group
@@ -310,6 +311,7 @@ export default function EventDetailsMiddle() {
               className="transition-transform duration-300 group-hover:scale-110"
             />
           </button>
+          </Link>
         </div>
 
       </div>

@@ -50,7 +50,7 @@ export default function EventDetailsMiddle() {
               Events
             </Link>
             <span>›</span>
-            {/* <span>Webinar on Research Publishing & Ethics</span> */}
+            <span className="hidden sm:block">Webinar on Research Publishing & Ethics</span>
           </div>
 
           <div className="flex flex-row gap-5 max-[670px]:gap-3 max-[670px]:items-start">
@@ -269,7 +269,7 @@ export default function EventDetailsMiddle() {
               </div>
             ))}
 
-            <button className="group w-full h-[42px] bg-[linear-gradient(180deg,#ffe29a_0%,#eeba47_48%,#c8932a_100%)] hover:text-[#071d4f] rounded-[6px] font-bold text-[13px] flex justify-center items-center gap-2 transition-all duration-300 hover:-translate-y-1 text-white hover:shadow-[0_12px_26px_rgba(226,172,57,0.38)] active:scale-[0.97]">
+            <button className="group w-full h-[42px] bg-[linear-gradient(180deg,#ffe29a_0%,#c8932a_48%,#eeba47_100%)] hover:text-[#071d4f] rounded-[6px] font-bold text-[13px] flex justify-center items-center gap-2 transition-all duration-300 hover:-translate-y-1 text-white hover:shadow-[0_12px_26px_rgba(226,172,57,0.38)] active:scale-[0.97]">
               REGISTER NOW
               <ArrowRight size={16} className="transition-transform duration-300 group-hover:translate-x-1" />
             </button>

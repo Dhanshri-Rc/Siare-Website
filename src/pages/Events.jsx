@@ -353,7 +353,7 @@ export default function Events() {
 
           <div className="text-center mt-[26px]">
             <button
-              className="bg-[#e2ac39] text-[#001b57] font-medium px-6 py-[10px]
+              className="bg-[#e2ac39] text-white font-medium px-6 py-[10px]
     rounded-[50px] inline-flex items-center gap-7 text-[14px] uppercase
     shadow-[0_7px_18px_rgba(0,27,87,0.25)]
     transition-all duration-300 hover:scale-105 hover:bg-[#ce9d33]"
