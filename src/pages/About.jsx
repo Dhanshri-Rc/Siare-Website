@@ -346,15 +346,10 @@ export default function About() {
       <section className="bg-[#071b44] py-[44px] sm:py-[36px] lg:py-[46px] w-full">
         <div
           className="
-    max-w-[1050px]
-
-    mx-4
     sm:mx-6
     md:mx-8
     lg:mx-auto
-
-    px-2
-    sm:px-4
+    w-full max-w-[1320px] mx-auto px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20
   "
         >
           <div className="text-center mb-[50px]">
@@ -393,8 +388,8 @@ export default function About() {
       </section>
 
       {/* Organizational Structure */}
-      <section className="bg-white py-[62px] px-4">
-        <div className="w-full max-w-[1320px] mx-auto px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20">
+      <section className="bg-white py-[62px] w-full max-w-[1320px] mx-auto px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20">
+        <div className="">
           <div className="text-center mb-[60px]">
             <h2 className="text-[20px] sm:text-[22px] font-bold uppercase text-[#001b57]">
               Organizational Structure

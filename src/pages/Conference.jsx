@@ -191,47 +191,54 @@ export default function EventDetailsMiddle() {
             mt-4
           "
         >
-          {/* REGISTER */}
-          <button
-            className="
-              group
+  <a
+  href="https://membership.siaresociety.org/register"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <button
+    className="
+      group
 
-              h-[44px]
-              px-6 max-[670px]:px-4
+      h-[44px]
+      px-6 max-[670px]:px-4
 
-              rounded-[8px]
+      rounded-[8px]
 
-              bg-[linear-gradient(180deg,#eebb48_0%,#d3aa51_55%,#b88922_100%)]
+      bg-[linear-gradient(180deg,#eebb48_0%,#d3aa51_55%,#b88922_100%)]
 
-              text-[#eff1f6]
+      text-[#eff1f6]
 
-              font-bold
-              text-[13px] max-[670px]:text-[11px]
+      font-bold
+      text-[13px] max-[670px]:text-[11px]
 
-              flex items-center justify-center gap-2
+      flex items-center justify-center gap-2
 
-              border border-[#d8a73b]
+      border border-[#d8a73b]
 
-              shadow-[0_10px_22px_rgba(238,187,72,0.28)]
+      shadow-[0_10px_22px_rgba(238,187,72,0.28)]
 
-              transition-all duration-500 ease-out
+      transition-all duration-500 ease-out
 
-              hover:-translate-y-[3px]
-              hover:scale-[1.03]
-              hover:bg-[linear-gradient(180deg,#ffd56a_0%,#eebb48_45%,#b97d12_100%)]
-              hover:shadow-[0_18px_36px_rgba(238,187,72,0.50)]
+      hover:-translate-y-[3px]
+      hover:scale-[1.03]
+      hover:bg-[linear-gradient(180deg,#ffd56a_0%,#eebb48_45%,#b97d12_100%)]
+      hover:shadow-[0_18px_36px_rgba(238,187,72,0.50)]
 
-              active:scale-[0.96]
-            "
-          >
-            <CalendarDays
-              size={16}
-              className="transition-all duration-300 group-hover:rotate-[-10deg]"
-            />
+      active:scale-[0.96]
+    "
+  >
+    <CalendarDays
+      size={16}
+      className="
+        transition-all duration-300
+        group-hover:rotate-[-10deg]
+      "
+    />
 
-            REGISTER NOW
-          </button>
-
+    REGISTER NOW
+  </button>
+</a>
           {/* DOWNLOAD */}
           <button
             className="
