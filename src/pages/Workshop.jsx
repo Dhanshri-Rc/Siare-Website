@@ -417,7 +417,7 @@ export default function Workshop() {
       </section>
 
       {/* CONTENT */}
-      <section className="w-full max-w-[1240px] mx-auto px-6 py-7 grid grid-cols-1 lg:grid-cols-[1fr_360px] gap-8">
+      <section className="w-full max-w-[1320px] mx-auto px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20 py-7 grid grid-cols-1 lg:grid-cols-[1fr_360px] gap-8">
         <div>
           <BlockTitle title="About The Workshop" />
           <p className="text-[#071d4f] text-[14px] leading-[1.65] mb-4 w-full max-w-[520px]">
@@ -819,7 +819,7 @@ export default function Workshop() {
       </section>
 
       {/* CTA */}
-      <section className="w-full max-w-[1240px] mx-auto px-6 pb-8">
+      <section className=" w-full max-w-[1320px] mx-auto px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20 pb-8">
         <div
           className="
       relative overflow-hidden
