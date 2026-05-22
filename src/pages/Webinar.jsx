@@ -179,27 +179,106 @@ export default function EventDetailsMiddle() {
 
           <BlockTitle title="Topics To Be Covered" className="mt-8" />
 
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
-            {[
-              ["Introduction to Research Publishing", "Understanding the journey from research to publication.", BookOpen],
-              ["Publication Ethics", "Core principles and guidelines for ethical publishing.", Scale],
-              ["Avoiding Plagiarism", "Tools, techniques, and best practices for original research.", FileText],
-              ["Peer Review Process", "How peer review ensures quality and integrity.", Users],
-              ["Choosing the Right Journal", "Tips for selecting the most suitable journals for your research.", TrendingUp],
-            ].map(([t, d, Icon], i) => (
-              <div key={i} className="group border border-[#dce3ee] rounded-[8px] p-4 text-center bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_12px_28px_rgba(226,172,57,0.16)] hover:border-[#e2ac39]/70 hover:bg-[#fffaf1]">
-                <Icon size={34} className="text-[#e2ac39] mx-auto mb-3 transition-all duration-300 group-hover:scale-110 group-hover:rotate-3" />
-                <h4 className="text-[#071d4f] text-[12px] font-bold leading-tight transition-all duration-300 group-hover:text-[#b9851e]">
-                  {t}
-                </h4>
-                <p className="text-[#334968] text-[10px] leading-[1.45] mt-2">
-                  {d}
-                </p>
-              </div>
-            ))}
-          </div>
+         <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+  {[
+    [
+      "Introduction to Research Publishing",
+      "Understanding the journey from research to publication.",
+      BookOpen,
+      "#0d6efd",
+    ],
+    [
+      "Publication Ethics",
+      "Core principles and guidelines for ethical publishing.",
+      Scale,
+      "#e2ac39",
+    ],
+    [
+      "Avoiding Plagiarism",
+      "Tools, techniques, and best practices for original research.",
+      FileText,
+      "#7c3aed",
+    ],
+    [
+      "Peer Review Process",
+      "How peer review ensures quality and integrity.",
+      Users,
+      "#22a447",
+    ],
+    [
+      "Choosing the Right Journal",
+      "Tips for selecting the most suitable journals for your research.",
+      TrendingUp,
+      "#ff7a1a",
+    ],
+  ].map(([t, d, Icon, color], i) => (
+    <div
+      key={i}
+      className="
+        group
+        border border-[#dce3ee]
+        rounded-[8px]
+        p-4
+        text-center
+        bg-white
 
-          <BlockTitle title="Speakers" className="mt-8" />
+        transition-all duration-500
+
+        hover:-translate-y-1
+        hover:border-[#e2ac39]/70
+        hover:shadow-[0_14px_30px_rgba(0,27,87,0.10)]
+      "
+    >
+      {/* Icon */}
+      <div
+        className="
+          w-[50px]
+          h-[50px]
+
+          rounded-full
+
+          mx-auto mb-3
+
+          flex items-center justify-center
+
+          transition-all duration-500
+
+          group-hover:scale-110
+          group-hover:-translate-y-1
+          group-hover:rotate-[6deg]
+        "
+        style={{
+          background: `linear-gradient(180deg, ${color}, ${color}dd)`,
+        }}
+      >
+        <Icon
+          size={24}
+          className="text-white"
+        />
+      </div>
+
+      <h4
+        className="
+          text-[#071d4f]
+          text-[12px]
+          font-bold
+          leading-tight
+
+          transition-all duration-300
+          group-hover:text-[#b9851e]
+        "
+      >
+        {t}
+      </h4>
+
+      <p className="text-[#334968] text-[10px] leading-[1.45] mt-2">
+        {d}
+      </p>
+    </div>
+  ))}
+</div>
+
+          {/* <BlockTitle title="Speakers" className="mt-8" />
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
@@ -226,7 +305,7 @@ export default function EventDetailsMiddle() {
                 </div>
               </div>
             ))}
-          </div>
+          </div> */}
 
           <BlockTitle title="How To Join" className="mt-6" />
 
@@ -237,7 +316,33 @@ export default function EventDetailsMiddle() {
               ["Step 3", "Join the webinar on time and participate in the live session.", Monitor],
             ].map(([step, text, Icon], i) => (
               <div key={i} className="group flex items-center gap-4">
-                <div className="w-[58px] h-[58px] rounded-full bg-[linear-gradient(180deg,#ffe29a_0%,#eeba47_48%,#c8932a_100%)] text-white flex items-center justify-center shrink-0 transition-all duration-300 ">
+               <div
+  className="
+    w-[58px]
+    h-[58px]
+
+    rounded-full
+
+    bg-[linear-gradient(180deg,#1251a0_0%,#0f468d_45%,#071d4f_100%)]
+
+    text-white
+
+    flex items-center justify-center
+
+    shrink-0
+
+    shadow-[0_10px_22px_rgba(12,48,103,0.30)]
+
+    transition-all duration-500
+
+    hover:scale-110
+    hover:-translate-y-1
+
+    hover:bg-[linear-gradient(180deg,#1a63c5_0%,#1251a0_45%,#071d4f_100%)]
+
+    hover:shadow-[0_16px_30px_rgba(18,81,160,0.45)]
+  "
+>
                   <Icon size={28} />
                 </div>
                 <div>
@@ -257,7 +362,7 @@ export default function EventDetailsMiddle() {
               ["Standard Registration", "16 Sep - 04 Oct, 2025", "Free", CalendarDays],
               ["Late Registration", "On/After 05 Oct, 2025", "Free", ClipboardCheck],
             ].map(([a, b, fee, Icon], i) => (
-              <div key={i} className="group border border-[#dce3ee] rounded-[8px] p-4 flex gap-3 mb-2 bg-white transition-all duration-300 hover:-translate-y-1 hover:border-[#e2ac39] hover:bg-[#fffaf1] hover:shadow-[0_10px_24px_rgba(226,172,57,0.18)]">
+              <div key={i} className="group border border-[#dce3ee] rounded-[8px] p-4 flex gap-3 mb-2 bg-white transition-all duration-300 hover:-translate-y-1 hover:border-[#e2ac39]">
                 <div className="w-[38px] h-[38px] rounded-full bg-[#fff7e2] text-[#e2ac39] flex items-center justify-center shrink-0 transition-all duration-300 group-hover:bg-[#e2ac39] group-hover:text-white group-hover:scale-110">
                   <Icon size={18} />
                 </div>

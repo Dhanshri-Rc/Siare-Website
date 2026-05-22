@@ -499,7 +499,7 @@ export default function EventDetailsMiddle() {
     </p>
   </div>
 
-  <BlockTitle title="Conference Themes" className="mt-6" />
+  <BlockTitle title="Conference Themes" className="mt-9" />
 
   <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
     {[
@@ -525,9 +525,9 @@ export default function EventDetailsMiddle() {
           transition-all duration-300
 
           hover:-translate-y-1
-          hover:shadow-[0_12px_28px_rgba(216,167,59,0.16)]
+         
           hover:border-[#d8a73b]/70
-          hover:bg-[#fffaf0]
+         
         "
       >
         <Icon
@@ -553,7 +553,7 @@ export default function EventDetailsMiddle() {
     ))}
   </div>
 
-  <BlockTitle title="Keynote Speakers" className="mt-6" />
+  {/* <BlockTitle title="Keynote Speakers" className="mt-6" />
 
   <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
     {["Dr. Robert Anderson", "Dr. Ananya Sharma", "Dr. Kenji Tanaka", "Dr. Maria Gonzalez"].map((n, i) => (
@@ -601,9 +601,9 @@ export default function EventDetailsMiddle() {
         </div>
       </div>
     ))}
-  </div>
+  </div> */}
 
-  <BlockTitle title="Venue Information" className="mt-6" />
+  <BlockTitle title="Venue Information" className="mt-9" />
 
   <div className="grid md:grid-cols-2 gap-5 items-center">
     <div className="overflow-hidden rounded-[8px]">
@@ -700,7 +700,7 @@ export default function EventDetailsMiddle() {
 </div>
 
         {/* SIDEBAR */}
-       <aside className="space-y-5">
+       <aside className="space-y-3">
 
   {/* Registration Details */}
   <SideCard title="Registration Details">
@@ -717,13 +717,12 @@ export default function EventDetailsMiddle() {
           rounded-[8px]
           p-4
           flex gap-3
-          mb-3
+          mb-2
           bg-white
           transition-all duration-300
           hover:-translate-y-1
           hover:border-[#d8a73b]
-          hover:bg-[#fffaf0]
-          hover:shadow-[0_10px_24px_rgba(216,167,59,0.18)]
+         
         "
       >
         <div
@@ -766,8 +765,7 @@ export default function EventDetailsMiddle() {
         flex justify-center items-center gap-2
         transition-all duration-300
         hover:-translate-y-1
-        hover:shadow-[0_12px_26px_rgba(216,167,59,0.38)]
-        hover:bg-[linear-gradient(180deg,#ffd56a_0%,#eebb48_50%,#b88922_100%)]
+        
         active:scale-[0.97]
       "
     >
@@ -897,7 +895,7 @@ export default function EventDetailsMiddle() {
           flex items-center gap-3
           text-[12px]
           text-[#071d4f]
-          mb-3 last:mb-0
+          mb-2 last:mb-0
           transition-all duration-300
           hover:translate-x-1
           hover:text-[#b88922]
@@ -1110,7 +1108,7 @@ function BlockTitle({ title, className = "" }) {
 
 function SideCard({ title, children }) {
   return (
-    <div className="border border-[#dce3ee] rounded-[10px] p-5 bg-white">
+    <div className="border border-[#dce3ee] rounded-[10px] p-4 bg-white">
       <BlockTitle title={title} />
       {children}
     </div>

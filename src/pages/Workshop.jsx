@@ -467,7 +467,10 @@ export default function Workshop() {
             ].map(([t, d, Icon, color], i) => (
               <div
                 key={i}
-                className="border border-[#dce3ee] rounded-[8px] p-4 text-center hover:-translate-y-1 hover:shadow-lg transition bg-white"
+                className="border border-[#dce3ee] rounded-[8px] p-4 text-center transition-all duration-300 hover:-translate-y-1
+          hover:shadow-[0_12px_28px_rgba(216,167,59,0.16)]
+          hover:border-[#d8a73b]/70
+          hover:bg-[#fffaf0]  bg-white"
               >
                 <Icon size={36} className={`${color} mx-auto mb-3`} />
                 <h4 className="text-[#071d4f] text-[13px] font-bold leading-tight">
@@ -480,15 +483,15 @@ export default function Workshop() {
             ))}
           </div>
 
-          <div className="flex items-center justify-between mt-4 mb-2">
+          {/* <div className="flex items-center justify-between mt-4 mb-2">
             <BlockTitle title="Workshop Facilitators" className="mt-6" />
 
             <button className="h-[36px] px-4 bg-[#f2f0ec] text-[#c99322] border border-[#c99322] hover:bg-[#c99322] hover:text-white rounded-[6px] text-[12px] font-semibold flex items-center gap-2 transition-all duration-300">
               VIEW ALL FACILITATORS <ArrowRight size={15} />
             </button>
-          </div>
+          </div> */}
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
+          {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
             {[
               [
                 "Dr. Robert Anderson",
@@ -533,9 +536,11 @@ export default function Workshop() {
         bg-white
         text-center
         shadow-[0_6px_18px_rgba(7,29,79,0.06)]
-        transition-all duration-300
-        hover:-translate-y-[4px]
-        hover:shadow-[0_14px_32px_rgba(7,29,79,0.14)]
+          transition-all duration-300
+
+          hover:-translate-y-1
+          hover:border-[#d8a73b]/70
+          hover:shadow-[0_12px_28px_rgba(216,167,59,0.16)]
       "
               >
                 <img
@@ -566,7 +571,7 @@ export default function Workshop() {
                 </div>
               </div>
             ))}
-          </div>
+          </div> */}
 
           <BlockTitle title="Who should attend?" className="mt-8" />
 
@@ -583,8 +588,8 @@ export default function Workshop() {
               ],
             ].map(([t, Icon, c], i) => (
               <div key={i} className="flex items-center gap-[12px] w-[170px]">
-                <Icon size={46} strokeWidth={1.7} className={`${c} shrink-0`} />
-                <p className="text-[#071d4f] text-[12px] font-bold leading-[1.35]">
+                <Icon size={46} strokeWidth={1.7} className={`${c} shrink-0 hover:text-[#c99322] transition-colors duration-300`} />
+                <p className="text-[#071d4f] text-[12px] font-bold leading-[1.35] hover:text-[#c99322] transition-colors duration-300">
                   {t}
                 </p>
               </div>
@@ -835,8 +840,8 @@ export default function Workshop() {
           <div className="absolute right-[80px] bottom-0 w-[420px] h-full opacity-30 pointer-events-none bg-[radial-gradient(circle,#006aff_1px,transparent_1.5px)] [background-size:10px_10px]" />
 
           <div className="relative z-10 flex items-center gap-5">
-            <div className="w-[58px] h-[58px] rounded-full border border-[#006aff] flex items-center justify-center shrink-0">
-              <TrendingUp size={30} className="text-[#006aff]" />
+            <div className="w-[58px] h-[58px] rounded-full border-2 border-[#c99322] flex items-center justify-center shrink-0">
+              <TrendingUp size={30} className="text-[#c99322]" />
             </div>
 
             <p className="font-bold text-[16px] leading-[1.7]">
